@@ -1,0 +1,48 @@
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Data files
+data/
+
+# Report-writing material
+REPORT_WORK_LOG.md
+REPORT_DRAFTING_PROMPT_v2.md
+Previous implementation report/
+
+# LaTeX source files, build output, and report assets
+*.tex
+*.aux
+*.lof
+*.lot
+*.toc
+*.out
+*.log
+*.pdf
+*.synctex.gz
+chapters/
+diagrams/
+Major pics/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Operating system files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,4542 @@
+{
+  "models": {
+    "dt": {
+      "display_name": "Decision Tree",
+      "metrics": {
+        "accuracy": 0.9765127375983483,
+        "precision": 0.9431220144458164,
+        "recall": 0.9939531167227417,
+        "f1": 0.967870631990142,
+        "confusion_matrix": [
+          [
+            1975121,
+            67667
+          ],
+          [
+            6826,
+            1122020
+          ]
+        ],
+        "specificity": 0.966875172558288,
+        "balanced_accuracy": 0.9804141446405148,
+        "mcc": 0.9501942614453017,
+        "roc_auc": 0.9974854214659512,
+        "pr_auc": 0.9933509747490402,
+        "class_prevalence": {
+          "IoT": 1128846,
+          "non-IoT": 2042788,
+          "IoT_fraction": 0.3559193778348952
+        },
+        "per_day": {
+          "16-10-09": {
+            "n_rows": 294084,
+            "accuracy": 0.9861400144176494,
+            "f1": 0.9926618585877498,
+            "precision": 0.992208138086909,
+            "recall": 0.9931159942363113
+          },
+          "16-10-10": {
+            "n_rows": 304410,
+            "accuracy": 0.9898327913012056,
+            "f1": 0.9946653291207531,
+            "precision": 0.9928632875675304,
+            "recall": 0.9964739239597039
+          },
+          "16-10-11": {
+            "n_rows": 889956,
+            "accuracy": 0.9861734737447694,
+            "f1": 0.9839027229973247,
+            "precision": 0.9749581295986145,
+            "recall": 0.9930129574519212
+          },
+          "16-10-12": {
+            "n_rows": 1683184,
+            "accuracy": 0.9673137339708552,
+            "f1": 0.8685366920192976,
+            "precision": 0.771690253875648,
+            "recall": 0.9931798806479113
+          }
+        },
+        "per_device": {
+          "00:16:6c:ab:6b:88": {
+            "true_label": "IoT",
+            "n_packets": 160888,
+            "correct_fraction": 0.999969
+          },
+          "00:24:e4:1b:6f:96": {
+            "true_label": "IoT",
+            "n_packets": 459,
+            "correct_fraction": 0.986928
+          },
+          "00:24:e4:20:28:c6": {
+            "true_label": "IoT",
+            "n_packets": 37984,
+            "correct_fraction": 0.999789
+          },
+          "00:62:6e:51:27:2e": {
+            "true_label": "IoT",
+            "n_packets": 94652,
+            "correct_fraction": 0.944502
+          },
+          "08:21:ef:3b:fc:e3": {
+            "true_label": "non-IoT",
+            "n_packets": 53197,
+            "correct_fraction": 0.886535
+          },
+          "18:b4:30:25:be:e4": {
+            "true_label": "IoT",
+            "n_packets": 282,
+            "correct_fraction": 0.042553
+          },
+          "18:b7:9e:02:20:44": {
+            "true_label": "IoT",
+            "n_packets": 12921,
+            "correct_fraction": 0.991409
+          },
+          "30:8c:fb:2f:e4:b2": {
+            "true_label": "IoT",
+            "n_packets": 374778,
+            "correct_fraction": 0.999947
+          },
+          "44:65:0d:56:cc:d3": {
+            "true_label": "IoT",
+            "n_packets": 103773,
+            "correct_fraction": 0.993544
+          },
+          "70:5a:0f:e4:9b:c0": {
+            "true_label": "IoT",
+            "n_packets": 10896,
+            "correct_fraction": 0.992199
+          },
+          "70:ee:50:03:b8:ac": {
+            "true_label": "IoT",
+            "n_packets": 13307,
+            "correct_fraction": 1.0
+          },
+          "70:ee:50:18:34:43": {
+            "true_label": "IoT",
+            "n_packets": 25070,
+            "correct_fraction": 0.988432
+          },
+          "74:2f:68:81:69:42": {
+            "true_label": "non-IoT",
+            "n_packets": 1979860,
+            "correct_fraction": 0.969533
+          },
+          "b4:ce:f6:a7:a3:c2": {
+            "true_label": "non-IoT",
+            "n_packets": 9731,
+            "correct_fraction": 0.865379
+          },
+          "d0:52:a8:00:67:5e": {
+            "true_label": "IoT",
+            "n_packets": 44809,
+            "correct_fraction": 1.0
+          },
+          "d0:73:d5:01:83:08": {
+            "true_label": "IoT",
+            "n_packets": 16330,
+            "correct_fraction": 0.999878
+          },
+          "ec:1a:59:79:f4:89": {
+            "true_label": "IoT",
+            "n_packets": 103507,
+            "correct_fraction": 0.999845
+          },
+          "ec:1a:59:83:28:11": {
+            "true_label": "IoT",
+            "n_packets": 129190,
+            "correct_fraction": 0.999303
+          }
+        }
+      }
+    },
+    "rf": {
+      "display_name": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9964267629871543,
+        "precision": 0.9953642425204194,
+        "recall": 0.994592707951306,
+        "f1": 0.9949783256684082,
+        "confusion_matrix": [
+          [
+            2037559,
+            5229
+          ],
+          [
+            6104,
+            1122742
+          ]
+        ],
+        "specificity": 0.9974402630130977,
+        "balanced_accuracy": 0.9960164854822019,
+        "mcc": 0.9922051948873092,
+        "roc_auc": 0.9998028941149638,
+        "pr_auc": 0.9996607131862658,
+        "class_prevalence": {
+          "IoT": 1128846,
+          "non-IoT": 2042788,
+          "IoT_fraction": 0.3559193778348952
+        },
+        "per_day": {
+          "16-10-09": {
+            "n_rows": 294084,
+            "accuracy": 0.9900674637178494,
+            "f1": 0.9947400360508313,
+            "precision": 0.9945125969027138,
+            "recall": 0.9949675792507204
+          },
+          "16-10-10": {
+            "n_rows": 304410,
+            "accuracy": 0.9928583160868566,
+            "f1": 0.9962516724368612,
+            "precision": 0.9947458123160088,
+            "recall": 0.997762098654151
+          },
+          "16-10-11": {
+            "n_rows": 889956,
+            "accuracy": 0.9950064947031089,
+            "f1": 0.9941212732126369,
+            "precision": 0.9960397089424644,
+            "recall": 0.9922102133345304
+          },
+          "16-10-12": {
+            "n_rows": 1683184,
+            "accuracy": 0.9989341628722707,
+            "f1": 0.9950923534818575,
+            "precision": 0.9962478911505006,
+            "recall": 0.9939394933001071
+          }
+        },
+        "per_device": {
+          "00:16:6c:ab:6b:88": {
+            "true_label": "IoT",
+            "n_packets": 160888,
+            "correct_fraction": 0.993673
+          },
+          "00:24:e4:1b:6f:96": {
+            "true_label": "IoT",
+            "n_packets": 459,
+            "correct_fraction": 0.986928
+          },
+          "00:24:e4:20:28:c6": {
+            "true_label": "IoT",
+            "n_packets": 37984,
+            "correct_fraction": 0.999816
+          },
+          "00:62:6e:51:27:2e": {
+            "true_label": "IoT",
+            "n_packets": 94652,
+            "correct_fraction": 0.952891
+          },
+          "08:21:ef:3b:fc:e3": {
+            "true_label": "non-IoT",
+            "n_packets": 53197,
+            "correct_fraction": 0.920296
+          },
+          "18:b4:30:25:be:e4": {
+            "true_label": "IoT",
+            "n_packets": 282,
+            "correct_fraction": 0.968085
+          },
+          "18:b7:9e:02:20:44": {
+            "true_label": "IoT",
+            "n_packets": 12921,
+            "correct_fraction": 0.991564
+          },
+          "30:8c:fb:2f:e4:b2": {
+            "true_label": "IoT",
+            "n_packets": 374778,
+            "correct_fraction": 0.999901
+          },
+          "44:65:0d:56:cc:d3": {
+            "true_label": "IoT",
+            "n_packets": 103773,
+            "correct_fraction": 0.998632
+          },
+          "70:5a:0f:e4:9b:c0": {
+            "true_label": "IoT",
+            "n_packets": 10896,
+            "correct_fraction": 0.994769
+          },
+          "70:ee:50:03:b8:ac": {
+            "true_label": "IoT",
+            "n_packets": 13307,
+            "correct_fraction": 1.0
+          },
+          "70:ee:50:18:34:43": {
+            "true_label": "IoT",
+            "n_packets": 25070,
+            "correct_fraction": 0.993977
+          },
+          "74:2f:68:81:69:42": {
+            "true_label": "non-IoT",
+            "n_packets": 1979860,
+            "correct_fraction": 0.999862
+          },
+          "b4:ce:f6:a7:a3:c2": {
+            "true_label": "non-IoT",
+            "n_packets": 9731,
+            "correct_fraction": 0.926523
+          },
+          "d0:52:a8:00:67:5e": {
+            "true_label": "IoT",
+            "n_packets": 44809,
+            "correct_fraction": 0.999955
+          },
+          "d0:73:d5:01:83:08": {
+            "true_label": "IoT",
+            "n_packets": 16330,
+            "correct_fraction": 1.0
+          },
+          "ec:1a:59:79:f4:89": {
+            "true_label": "IoT",
+            "n_packets": 103507,
+            "correct_fraction": 0.999932
+          },
+          "ec:1a:59:83:28:11": {
+            "true_label": "IoT",
+            "n_packets": 129190,
+            "correct_fraction": 0.999226
+          }
+        }
+      }
+    }
+  },
+  "graphs": {
+    "metrics_comparison": "run_2026-10-23_191644_metrics_comparison.png",
+    "confusion_matrices": "run_2026-10-23_191644_confusion_matrices.png",
+    "inference_latency": "run_2026-10-23_191644_inference_latency.png",
+    "training_time": "run_2026-10-23_191644_training_time.png",
+    "pareto": "run_2026-10-23_191644_pareto.png",
+    "model_size": "run_2026-10-23_191644_model_size.png",
+    "resource_cpu": "run_2026-10-23_191644_resource_cpu.png",
+    "resource_memory": "run_2026-10-23_191644_resource_memory.png"
+  },
+  "timing": {
+    "env": {
+      "cpu_model": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+      "cpu_cores": 12,
+      "cpu_logical_cores": 12,
+      "cpu_physical_cores": 10,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "numpy_version": "2.5.3",
+      "sklearn_version": "1.9.1"
+    },
+    "notes": "Feature extraction cost is NOT included in these timings.",
+    "resource_profiling": {
+      "schema_version": 1,
+      "library": "psutil",
+      "scope": "model predict/testing only; model training, feature extraction, data loading, tuning, serialization, graphing and report generation are excluded",
+      "process_scope": "current process plus recursive child processes",
+      "cpu_definition": "aggregate process-tree user+system CPU seconds; average utilization = 100 * CPU seconds / wall seconds; may exceed 100 for parallel workloads",
+      "memory_definition": "aggregate process-tree RSS bytes sampled during workload; shared pages can be counted by more than one process",
+      "sampling_interval_s": 0.05,
+      "status": "complete"
+    },
+    "models": {
+      "dt": {
+        "static": {
+          "depth": 9,
+          "leaves": "44",
+          "model_size_bytes": 8265,
+          "model_size_kb": 8.1
+        },
+        "training_cost": {
+          "tuning_time_s": 408.1275425000349,
+          "tuning_cpu_s": 401.640625,
+          "fit_time_s": 39.6979206999531,
+          "fit_cpu_s": 39.234375,
+          "total_training_cost_s": 447.825463199988,
+          "n_rows_tuning": 1380435,
+          "n_rows_fit": 6902224,
+          "n_candidates": 16,
+          "n_fits_tuning": 81,
+          "n_jobs_tuning": 1,
+          "n_jobs_fit": 1
+        },
+        "inference_batch": {
+          "1": {
+            "median_us_per_pkt": 358.20004995912313,
+            "q25_us_per_pkt": 263.4999109432101,
+            "q75_us_per_pkt": 562.2000899165869
+          },
+          "10": {
+            "median_us_per_pkt": 43.940008617937565,
+            "q25_us_per_pkt": 42.00999392196536,
+            "q75_us_per_pkt": 53.98999201133847
+          },
+          "100": {
+            "median_us_per_pkt": 5.608999636024237,
+            "q25_us_per_pkt": 4.643000429496169,
+            "q75_us_per_pkt": 6.530999671667814
+          },
+          "1000": {
+            "median_us_per_pkt": 0.2308000111952424,
+            "q25_us_per_pkt": 0.17010001465678215,
+            "q75_us_per_pkt": 0.2845999551936984
+          },
+          "10000": {
+            "median_us_per_pkt": 0.06349999457597733,
+            "q25_us_per_pkt": 0.06306000286713243,
+            "q75_us_per_pkt": 0.0737000023946166
+          },
+          "100000": {
+            "median_us_per_pkt": 0.07797199999913573,
+            "q25_us_per_pkt": 0.06456799921579659,
+            "q75_us_per_pkt": 0.0823190005030483
+          },
+          "resource": {
+            "1": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 1,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.027733800001442432,
+                  "cpu_time_s_total": 0.15625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864260608,
+                  "rss_peak_bytes": 3864387584,
+                  "rss_after_bytes": 3864379392,
+                  "rss_peak_delta_bytes": 126976,
+                  "rss_after_delta_bytes": 118784,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.019659899990074337,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864420352,
+                  "rss_peak_bytes": 3864530944,
+                  "rss_after_bytes": 3864530944,
+                  "rss_peak_delta_bytes": 110592,
+                  "rss_after_delta_bytes": 110592,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.016012600040994585,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864596480,
+                  "rss_peak_bytes": 3864670208,
+                  "rss_after_bytes": 3864653824,
+                  "rss_peak_delta_bytes": 73728,
+                  "rss_after_delta_bytes": 57344,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.078125,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3864530944,
+                "rss_peak_delta_median_bytes": 110592,
+                "rss_peak_delta_p25_bytes": 92160,
+                "rss_peak_delta_p75_bytes": 118784,
+                "rss_after_delta_median_bytes": 110592
+              }
+            },
+            "10": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 10,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.026868400047533214,
+                  "cpu_time_s_total": 0.15625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864350720,
+                  "rss_peak_bytes": 3864522752,
+                  "rss_after_bytes": 3864522752,
+                  "rss_peak_delta_bytes": 172032,
+                  "rss_after_delta_bytes": 172032,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.03289899998344481,
+                  "cpu_time_s_total": 0.15625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864555520,
+                  "rss_peak_bytes": 3864600576,
+                  "rss_after_bytes": 3864580096,
+                  "rss_peak_delta_bytes": 45056,
+                  "rss_after_delta_bytes": 24576,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.01902670005802065,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864588288,
+                  "rss_peak_bytes": 3864629248,
+                  "rss_after_bytes": 3864608768,
+                  "rss_peak_delta_bytes": 40960,
+                  "rss_after_delta_bytes": 20480,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.15625,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3864600576,
+                "rss_peak_delta_median_bytes": 45056,
+                "rss_peak_delta_p25_bytes": 43008,
+                "rss_peak_delta_p75_bytes": 108544,
+                "rss_after_delta_median_bytes": 24576
+              }
+            },
+            "100": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 100,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.03604559996165335,
+                  "cpu_time_s_total": 0.171875,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864641536,
+                  "rss_peak_bytes": 3864727552,
+                  "rss_after_bytes": 3864702976,
+                  "rss_peak_delta_bytes": 86016,
+                  "rss_after_delta_bytes": 61440,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.0319781000725925,
+                  "cpu_time_s_total": 0.15625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864715264,
+                  "rss_peak_bytes": 3864715264,
+                  "rss_after_bytes": 3864420352,
+                  "rss_peak_delta_bytes": 0,
+                  "rss_after_delta_bytes": -294912,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.01997040002606809,
+                  "cpu_time_s_total": 0.109375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864440832,
+                  "rss_peak_bytes": 3864489984,
+                  "rss_after_bytes": 3864465408,
+                  "rss_peak_delta_bytes": 49152,
+                  "rss_after_delta_bytes": 24576,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.15625,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3864715264,
+                "rss_peak_delta_median_bytes": 49152,
+                "rss_peak_delta_p25_bytes": 24576,
+                "rss_peak_delta_p75_bytes": 67584,
+                "rss_after_delta_median_bytes": 24576
+              }
+            },
+            "1000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 1000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.025780600029975176,
+                  "cpu_time_s_total": 0.140625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864547328,
+                  "rss_peak_bytes": 3864666112,
+                  "rss_after_bytes": 3864666112,
+                  "rss_peak_delta_bytes": 118784,
+                  "rss_after_delta_bytes": 118784,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.01857360010035336,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864690688,
+                  "rss_peak_bytes": 3864723456,
+                  "rss_after_bytes": 3864719360,
+                  "rss_peak_delta_bytes": 32768,
+                  "rss_after_delta_bytes": 28672,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.013000399922020733,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3864735744,
+                  "rss_peak_bytes": 3864760320,
+                  "rss_after_bytes": 3864739840,
+                  "rss_peak_delta_bytes": 24576,
+                  "rss_after_delta_bytes": 4096,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.125,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3864723456,
+                "rss_peak_delta_median_bytes": 32768,
+                "rss_peak_delta_p25_bytes": 28672,
+                "rss_peak_delta_p75_bytes": 75776,
+                "rss_after_delta_median_bytes": 28672
+              }
+            },
+            "10000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 10000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.031228500069119036,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3865038848,
+                  "rss_peak_bytes": 3865071616,
+                  "rss_after_bytes": 3865051136,
+                  "rss_peak_delta_bytes": 32768,
+                  "rss_after_delta_bytes": 12288,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.018149200011976063,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3865051136,
+                  "rss_peak_bytes": 3865108480,
+                  "rss_after_bytes": 3865108480,
+                  "rss_peak_delta_bytes": 57344,
+                  "rss_after_delta_bytes": 57344,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.021682800026610494,
+                  "cpu_time_s_total": 0.109375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3865124864,
+                  "rss_peak_bytes": 3865124864,
+                  "rss_after_bytes": 3864727552,
+                  "rss_peak_delta_bytes": 0,
+                  "rss_after_delta_bytes": -397312,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.09375,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3865108480,
+                "rss_peak_delta_median_bytes": 32768,
+                "rss_peak_delta_p25_bytes": 16384,
+                "rss_peak_delta_p75_bytes": 45056,
+                "rss_after_delta_median_bytes": 12288
+              }
+            },
+            "100000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 100000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.023206100100651383,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3867336704,
+                  "rss_peak_bytes": 3867381760,
+                  "rss_after_bytes": 3867361280,
+                  "rss_peak_delta_bytes": 45056,
+                  "rss_after_delta_bytes": 24576,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.02490170008968562,
+                  "cpu_time_s_total": 0.0625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3867414528,
+                  "rss_peak_bytes": 3867484160,
+                  "rss_after_bytes": 3867484160,
+                  "rss_peak_delta_bytes": 69632,
+                  "rss_after_delta_bytes": 69632,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.020013900008052588,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3867484160,
+                  "rss_peak_bytes": 3867537408,
+                  "rss_after_bytes": 3867525120,
+                  "rss_peak_delta_bytes": 53248,
+                  "rss_after_delta_bytes": 40960,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.078125,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3867484160,
+                "rss_peak_delta_median_bytes": 53248,
+                "rss_peak_delta_p25_bytes": 49152,
+                "rss_peak_delta_p75_bytes": 61440,
+                "rss_after_delta_median_bytes": 40960
+              }
+            }
+          },
+          "n_jobs": 1
+        },
+        "inference_single": {
+          "p50_us": 75.99999662488699,
+          "p95_us": 152.80499937944114,
+          "p99_us": 220.8030503243208,
+          "n_samples": 2000,
+          "resource": {
+            "workload": "inference_single",
+            "configuration": {
+              "n_jobs": 1,
+              "operations_per_measurement": 2000,
+              "n_samples": 2000
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.1927299000089988,
+                "cpu_time_s_total": 0.234375,
+                "cpu_utilization_avg_pct": 121.6080120360446,
+                "rss_before_bytes": 3877826560,
+                "rss_peak_bytes": 3878240256,
+                "rss_after_bytes": 3878240256,
+                "rss_peak_delta_bytes": 413696,
+                "rss_after_delta_bytes": 413696,
+                "sample_count": 3,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 0.19705489999614656,
+                "cpu_time_s_total": 0.25,
+                "cpu_utilization_avg_pct": 126.86819764689373,
+                "rss_before_bytes": 3878240256,
+                "rss_peak_bytes": 3878268928,
+                "rss_after_bytes": 3878248448,
+                "rss_peak_delta_bytes": 28672,
+                "rss_after_delta_bytes": 8192,
+                "sample_count": 3,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 0.1913555000210181,
+                "cpu_time_s_total": 0.234375,
+                "cpu_utilization_avg_pct": 122.48145466122308,
+                "rss_before_bytes": 3878248448,
+                "rss_peak_bytes": 3878293504,
+                "rss_after_bytes": 3878273024,
+                "rss_peak_delta_bytes": 45056,
+                "rss_after_delta_bytes": 24576,
+                "sample_count": 3,
+                "unavailable_reason": null
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.234375,
+              "cpu_utilization_median_pct": 122.48145466122308,
+              "cpu_utilization_p25_pct": 122.04473334863384,
+              "cpu_utilization_p75_pct": 124.67482615405841,
+              "rss_peak_median_bytes": 3878268928,
+              "rss_peak_delta_median_bytes": 45056,
+              "rss_peak_delta_p25_bytes": 36864,
+              "rss_peak_delta_p75_bytes": 229376,
+              "rss_after_delta_median_bytes": 24576
+            }
+          },
+          "n_jobs": 1
+        },
+        "training_scaling": [
+          {
+            "fraction": 0.1,
+            "n_rows": 690222,
+            "n_repeats": 3,
+            "wall_time_s": [
+              2.7912,
+              3.1054,
+              2.8684
+            ],
+            "cpu_time_s": [
+              2.6562,
+              3.0781,
+              2.8594
+            ],
+            "wall_time_median_s": 2.868361399974674,
+            "cpu_time_median_s": 2.859375
+          },
+          {
+            "fraction": 0.3,
+            "n_rows": 2070667,
+            "n_repeats": 3,
+            "wall_time_s": [
+              11.7951,
+              11.881,
+              11.9138
+            ],
+            "cpu_time_s": [
+              11.6719,
+              11.8594,
+              11.7812
+            ],
+            "wall_time_median_s": 11.880950500024483,
+            "cpu_time_median_s": 11.78125
+          },
+          {
+            "fraction": 1.0,
+            "n_rows": 6902224,
+            "n_repeats": 1,
+            "wall_time_s": [
+              42.7225
+            ],
+            "cpu_time_s": [
+              42.2656
+            ],
+            "wall_time_median_s": 42.722455099923536,
+            "cpu_time_median_s": 42.265625
+          }
+        ]
+      },
+      "rf": {
+        "static": {
+          "n_estimators": 50,
+          "mean_depth": 27.36,
+          "total_nodes": 72612,
+          "model_size_bytes": 5829897,
+          "model_size_kb": 5693.3
+        },
+        "training_cost": {
+          "tuning_time_s": 561.9864095998928,
+          "tuning_cpu_s": 5226.734375,
+          "fit_time_s": 114.00774659996387,
+          "fit_cpu_s": 1129.25,
+          "total_training_cost_s": 675.9941561998567,
+          "n_rows_tuning": 1380435,
+          "n_rows_fit": 6902224,
+          "n_candidates": 8,
+          "n_fits_tuning": 40,
+          "n_jobs_tuning": -1,
+          "n_jobs_fit": -1
+        },
+        "inference_batch": {
+          "1": {
+            "median_us_per_pkt": 3552.700043655932,
+            "q25_us_per_pkt": 3066.1000637337565,
+            "q75_us_per_pkt": 4049.499984830618
+          },
+          "10": {
+            "median_us_per_pkt": 253.70999937877056,
+            "q25_us_per_pkt": 231.56000534072518,
+            "q75_us_per_pkt": 304.7300036996603
+          },
+          "100": {
+            "median_us_per_pkt": 29.00600084103644,
+            "q25_us_per_pkt": 27.759999502450228,
+            "q75_us_per_pkt": 34.39099993556738
+          },
+          "1000": {
+            "median_us_per_pkt": 7.6398999663069835,
+            "q25_us_per_pkt": 7.551899994723499,
+            "q75_us_per_pkt": 10.576499975286424
+          },
+          "10000": {
+            "median_us_per_pkt": 2.87663999479264,
+            "q25_us_per_pkt": 2.805900003295392,
+            "q75_us_per_pkt": 2.979909989517182
+          },
+          "100000": {
+            "median_us_per_pkt": 2.6965949998702854,
+            "q25_us_per_pkt": 2.6428790006320924,
+            "q75_us_per_pkt": 2.781426999717951
+          },
+          "resource": {
+            "1": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 1,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.022879299940541387,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879084032,
+                  "rss_peak_bytes": 3879190528,
+                  "rss_after_bytes": 3879170048,
+                  "rss_peak_delta_bytes": 106496,
+                  "rss_after_delta_bytes": 86016,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.018563600024208426,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879174144,
+                  "rss_peak_bytes": 3879198720,
+                  "rss_after_bytes": 3879194624,
+                  "rss_peak_delta_bytes": 24576,
+                  "rss_after_delta_bytes": 20480,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.022472299984656274,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879251968,
+                  "rss_peak_bytes": 3879301120,
+                  "rss_after_bytes": 3879297024,
+                  "rss_peak_delta_bytes": 49152,
+                  "rss_after_delta_bytes": 45056,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.078125,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3879198720,
+                "rss_peak_delta_median_bytes": 49152,
+                "rss_peak_delta_p25_bytes": 36864,
+                "rss_peak_delta_p75_bytes": 77824,
+                "rss_after_delta_median_bytes": 45056
+              }
+            },
+            "10": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 10,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.014961600070819259,
+                  "cpu_time_s_total": 0.0625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879407616,
+                  "rss_peak_bytes": 3879456768,
+                  "rss_after_bytes": 3879444480,
+                  "rss_peak_delta_bytes": 49152,
+                  "rss_after_delta_bytes": 36864,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.02303780009970069,
+                  "cpu_time_s_total": 0.0625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879444480,
+                  "rss_peak_bytes": 3879489536,
+                  "rss_after_bytes": 3879469056,
+                  "rss_peak_delta_bytes": 45056,
+                  "rss_after_delta_bytes": 24576,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.01441299996804446,
+                  "cpu_time_s_total": 0.0625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879469056,
+                  "rss_peak_bytes": 3879501824,
+                  "rss_after_bytes": 3879501824,
+                  "rss_peak_delta_bytes": 32768,
+                  "rss_after_delta_bytes": 32768,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.0625,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3879489536,
+                "rss_peak_delta_median_bytes": 45056,
+                "rss_peak_delta_p25_bytes": 38912,
+                "rss_peak_delta_p75_bytes": 47104,
+                "rss_after_delta_median_bytes": 32768
+              }
+            },
+            "100": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 100,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.021216099965386093,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879555072,
+                  "rss_peak_bytes": 3879620608,
+                  "rss_after_bytes": 3879608320,
+                  "rss_peak_delta_bytes": 65536,
+                  "rss_after_delta_bytes": 53248,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.015789099968969822,
+                  "cpu_time_s_total": 0.0625,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3879620608,
+                  "rss_peak_bytes": 3879657472,
+                  "rss_after_bytes": 3872423936,
+                  "rss_peak_delta_bytes": 36864,
+                  "rss_after_delta_bytes": -7196672,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.019457299960777164,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3872481280,
+                  "rss_peak_bytes": 3872555008,
+                  "rss_after_bytes": 3872538624,
+                  "rss_peak_delta_bytes": 73728,
+                  "rss_after_delta_bytes": 57344,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.078125,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3879620608,
+                "rss_peak_delta_median_bytes": 65536,
+                "rss_peak_delta_p25_bytes": 51200,
+                "rss_peak_delta_p75_bytes": 69632,
+                "rss_after_delta_median_bytes": 53248
+              }
+            },
+            "1000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 1000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.018773699994198978,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3872669696,
+                  "rss_peak_bytes": 3872743424,
+                  "rss_after_bytes": 3872743424,
+                  "rss_peak_delta_bytes": 73728,
+                  "rss_after_delta_bytes": 73728,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.029027300071902573,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3872759808,
+                  "rss_peak_bytes": 3872829440,
+                  "rss_after_bytes": 3872804864,
+                  "rss_peak_delta_bytes": 69632,
+                  "rss_after_delta_bytes": 45056,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.023412000038661063,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3872829440,
+                  "rss_peak_bytes": 3872870400,
+                  "rss_after_bytes": 3872845824,
+                  "rss_peak_delta_bytes": 40960,
+                  "rss_after_delta_bytes": 16384,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.09375,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3872829440,
+                "rss_peak_delta_median_bytes": 69632,
+                "rss_peak_delta_p25_bytes": 55296,
+                "rss_peak_delta_p75_bytes": 71680,
+                "rss_after_delta_median_bytes": 45056
+              }
+            },
+            "10000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 10000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.04705239995382726,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3873316864,
+                  "rss_peak_bytes": 3873353728,
+                  "rss_after_bytes": 3873345536,
+                  "rss_peak_delta_bytes": 36864,
+                  "rss_after_delta_bytes": 28672,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.043759900028817356,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3873353728,
+                  "rss_peak_bytes": 3873386496,
+                  "rss_after_bytes": 3873374208,
+                  "rss_peak_delta_bytes": 32768,
+                  "rss_after_delta_bytes": 20480,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.04036039998754859,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 3873415168,
+                  "rss_peak_bytes": 3873443840,
+                  "rss_after_bytes": 3872841728,
+                  "rss_peak_delta_bytes": 28672,
+                  "rss_after_delta_bytes": -573440,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.09375,
+                "cpu_utilization_median_pct": null,
+                "cpu_utilization_p25_pct": null,
+                "cpu_utilization_p75_pct": null,
+                "rss_peak_median_bytes": 3873386496,
+                "rss_peak_delta_median_bytes": 32768,
+                "rss_peak_delta_p25_bytes": 30720,
+                "rss_peak_delta_p75_bytes": 34816,
+                "rss_after_delta_median_bytes": 20480
+              }
+            },
+            "100000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": 1,
+                "batch_size": 100000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.2984677000204101,
+                  "cpu_time_s_total": 0.34375,
+                  "cpu_utilization_avg_pct": 115.17159142396089,
+                  "rss_before_bytes": 3876536320,
+                  "rss_peak_bytes": 3876687872,
+                  "rss_after_bytes": 3876548608,
+                  "rss_peak_delta_bytes": 151552,
+                  "rss_after_delta_bytes": 12288,
+                  "sample_count": 5,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.3174958999734372,
+                  "cpu_time_s_total": 0.359375,
+                  "cpu_utilization_avg_pct": 113.1904380592211,
+                  "rss_before_bytes": 3876573184,
+                  "rss_peak_bytes": 3876671488,
+                  "rss_after_bytes": 3876671488,
+                  "rss_peak_delta_bytes": 98304,
+                  "rss_after_delta_bytes": 98304,
+                  "sample_count": 5,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.30005980003625154,
+                  "cpu_time_s_total": 0.34375,
+                  "cpu_utilization_avg_pct": 114.56049759363636,
+                  "rss_before_bytes": 3876687872,
+                  "rss_peak_bytes": 3876831232,
+                  "rss_after_bytes": 3876806656,
+                  "rss_peak_delta_bytes": 143360,
+                  "rss_after_delta_bytes": 118784,
+                  "sample_count": 5,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.34375,
+                "cpu_utilization_median_pct": 114.56049759363636,
+                "cpu_utilization_p25_pct": 113.87546782642872,
+                "cpu_utilization_p75_pct": 114.86604450879862,
+                "rss_peak_median_bytes": 3876687872,
+                "rss_peak_delta_median_bytes": 143360,
+                "rss_peak_delta_p25_bytes": 120832,
+                "rss_peak_delta_p75_bytes": 147456,
+                "rss_after_delta_median_bytes": 98304
+              }
+            }
+          },
+          "n_jobs": 1
+        },
+        "inference_single": {
+          "p50_us": 2223.9499958232045,
+          "p95_us": 2583.92000105232,
+          "p99_us": 3194.863995304331,
+          "n_samples": 2000,
+          "resource": {
+            "workload": "inference_single",
+            "configuration": {
+              "n_jobs": 1,
+              "operations_per_measurement": 2000,
+              "n_samples": 2000
+            },
+            "repeats": [
+              {
+                "wall_time_s": 5.538205199991353,
+                "cpu_time_s_total": 5.578125,
+                "cpu_utilization_avg_pct": 100.72080752819902,
+                "rss_before_bytes": 3898220544,
+                "rss_peak_bytes": 3900690432,
+                "rss_after_bytes": 3900690432,
+                "rss_peak_delta_bytes": 2469888,
+                "rss_after_delta_bytes": 2469888,
+                "sample_count": 77,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 5.607882600044832,
+                "cpu_time_s_total": 5.71875,
+                "cpu_utilization_avg_pct": 101.9769921708825,
+                "rss_before_bytes": 3900739584,
+                "rss_peak_bytes": 3900977152,
+                "rss_after_bytes": 3900624896,
+                "rss_peak_delta_bytes": 237568,
+                "rss_after_delta_bytes": -114688,
+                "sample_count": 72,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 5.760175000061281,
+                "cpu_time_s_total": 5.8125,
+                "cpu_utilization_avg_pct": 100.90839253908366,
+                "rss_before_bytes": 3900633088,
+                "rss_peak_bytes": 3900985344,
+                "rss_after_bytes": 3900784640,
+                "rss_peak_delta_bytes": 352256,
+                "rss_after_delta_bytes": 151552,
+                "sample_count": 82,
+                "unavailable_reason": null
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 5.71875,
+              "cpu_utilization_median_pct": 100.90839253908366,
+              "cpu_utilization_p25_pct": 100.81460003364134,
+              "cpu_utilization_p75_pct": 101.44269235498308,
+              "rss_peak_median_bytes": 3900977152,
+              "rss_peak_delta_median_bytes": 352256,
+              "rss_peak_delta_p25_bytes": 294912,
+              "rss_peak_delta_p75_bytes": 1411072,
+              "rss_after_delta_median_bytes": 151552
+            }
+          },
+          "n_jobs": 1
+        },
+        "training_scaling_1job": [
+          {
+            "fraction": 0.1,
+            "n_rows": 690222,
+            "n_repeats": 3,
+            "wall_time_s": [
+              22.1809,
+              23.4438,
+              25.4629
+            ],
+            "cpu_time_s": [
+              21.9375,
+              23.4062,
+              25.2031
+            ],
+            "wall_time_median_s": 23.443802000023425,
+            "cpu_time_median_s": 23.40625
+          },
+          {
+            "fraction": 0.3,
+            "n_rows": 2070667,
+            "n_repeats": 3,
+            "wall_time_s": [
+              102.8093,
+              99.4446,
+              100.2406
+            ],
+            "cpu_time_s": [
+              101.7031,
+              98.1094,
+              98.9688
+            ],
+            "wall_time_median_s": 100.24060010001995,
+            "cpu_time_median_s": 98.96875
+          },
+          {
+            "fraction": 1.0,
+            "n_rows": 6902224,
+            "n_repeats": 1,
+            "wall_time_s": [
+              361.6181
+            ],
+            "cpu_time_s": [
+              355.5156
+            ],
+            "wall_time_median_s": 361.6180904000066,
+            "cpu_time_median_s": 355.515625
+          }
+        ],
+        "training_scaling_all_cores": [
+          {
+            "fraction": 0.1,
+            "n_rows": 690222,
+            "n_repeats": 3,
+            "wall_time_s": [
+              6.3238,
+              6.2702,
+              6.4214
+            ],
+            "cpu_time_s": [
+              63.1094,
+              62.3594,
+              62.5312
+            ],
+            "wall_time_median_s": 6.323753700009547,
+            "cpu_time_median_s": 62.53125
+          },
+          {
+            "fraction": 0.3,
+            "n_rows": 2070667,
+            "n_repeats": 3,
+            "wall_time_s": [
+              33.2597,
+              32.5944,
+              32.3635
+            ],
+            "cpu_time_s": [
+              317.1406,
+              309.4688,
+              309.6875
+            ],
+            "wall_time_median_s": 32.594384400057606,
+            "cpu_time_median_s": 309.6875
+          },
+          {
+            "fraction": 1.0,
+            "n_rows": 6902224,
+            "n_repeats": 1,
+            "wall_time_s": [
+              130.1021
+            ],
+            "cpu_time_s": [
+              1041.5469
+            ],
+            "wall_time_median_s": 130.1021361000603,
+            "cpu_time_median_s": 1041.546875
+          }
+        ],
+        "inference_batch_all_cores": {
+          "1": {
+            "median_us_per_pkt": 36620.90003490448,
+            "q25_us_per_pkt": 34865.49993976951,
+            "q75_us_per_pkt": 37152.100005187094
+          },
+          "10": {
+            "median_us_per_pkt": 3550.379991065711,
+            "q25_us_per_pkt": 3332.6599979773164,
+            "q75_us_per_pkt": 4369.179997593164
+          },
+          "100": {
+            "median_us_per_pkt": 347.25400037132204,
+            "q25_us_per_pkt": 344.9160000309348,
+            "q75_us_per_pkt": 398.27800006605685
+          },
+          "1000": {
+            "median_us_per_pkt": 31.316900043748323,
+            "q25_us_per_pkt": 31.313500017859045,
+            "q75_us_per_pkt": 31.634200015105304
+          },
+          "10000": {
+            "median_us_per_pkt": 3.1237200018949807,
+            "q25_us_per_pkt": 3.112089994829148,
+            "q75_us_per_pkt": 3.2421399955637753
+          },
+          "100000": {
+            "median_us_per_pkt": 0.8078620000742376,
+            "q25_us_per_pkt": 0.7439490000251681,
+            "q75_us_per_pkt": 1.1331659997813404
+          },
+          "resource": {
+            "1": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 1,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.039896200061775744,
+                  "cpu_time_s_total": 0.09375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 753917952,
+                  "rss_peak_bytes": 754278400,
+                  "rss_after_bytes": 754278400,
+                  "rss_peak_delta_bytes": 360448,
+                  "rss_after_delta_bytes": 360448,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.05653149995487183,
+                  "cpu_time_s_total": 0.140625,
+                  "cpu_utilization_avg_pct": 248.75511902613343,
+                  "rss_before_bytes": 754274304,
+                  "rss_peak_bytes": 754421760,
+                  "rss_after_bytes": 754421760,
+                  "rss_peak_delta_bytes": 147456,
+                  "rss_after_delta_bytes": 147456,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.06276110000908375,
+                  "cpu_time_s_total": 0.1875,
+                  "cpu_utilization_avg_pct": 298.7519338776123,
+                  "rss_before_bytes": 754446336,
+                  "rss_peak_bytes": 754520064,
+                  "rss_after_bytes": 754520064,
+                  "rss_peak_delta_bytes": 73728,
+                  "rss_after_delta_bytes": 73728,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.140625,
+                "cpu_utilization_median_pct": 273.75352645187286,
+                "cpu_utilization_p25_pct": 261.25432273900316,
+                "cpu_utilization_p75_pct": 286.2527301647426,
+                "rss_peak_median_bytes": 754421760,
+                "rss_peak_delta_median_bytes": 147456,
+                "rss_peak_delta_p25_bytes": 110592,
+                "rss_peak_delta_p75_bytes": 253952,
+                "rss_after_delta_median_bytes": 147456
+              }
+            },
+            "10": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 10,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.061620599939487875,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": 202.85424050196104,
+                  "rss_before_bytes": 749776896,
+                  "rss_peak_bytes": 749875200,
+                  "rss_after_bytes": 749875200,
+                  "rss_peak_delta_bytes": 98304,
+                  "rss_after_delta_bytes": 98304,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.07064319995697588,
+                  "cpu_time_s_total": 0.171875,
+                  "cpu_utilization_avg_pct": 243.30013377745877,
+                  "rss_before_bytes": 749862912,
+                  "rss_peak_bytes": 749948928,
+                  "rss_after_bytes": 749948928,
+                  "rss_peak_delta_bytes": 86016,
+                  "rss_after_delta_bytes": 86016,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.06689150002785027,
+                  "cpu_time_s_total": 0.1875,
+                  "cpu_utilization_avg_pct": 280.3046723753158,
+                  "rss_before_bytes": 749936640,
+                  "rss_peak_bytes": 750010368,
+                  "rss_after_bytes": 750010368,
+                  "rss_peak_delta_bytes": 73728,
+                  "rss_after_delta_bytes": 73728,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.171875,
+                "cpu_utilization_median_pct": 243.30013377745877,
+                "cpu_utilization_p25_pct": 223.0771871397099,
+                "cpu_utilization_p75_pct": 261.8024030763873,
+                "rss_peak_median_bytes": 749948928,
+                "rss_peak_delta_median_bytes": 86016,
+                "rss_peak_delta_p25_bytes": 79872,
+                "rss_peak_delta_p75_bytes": 92160,
+                "rss_after_delta_median_bytes": 86016
+              }
+            },
+            "100": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 100,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.047878899960778654,
+                  "cpu_time_s_total": 0.109375,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 751153152,
+                  "rss_peak_bytes": 751157248,
+                  "rss_after_bytes": 751157248,
+                  "rss_peak_delta_bytes": 4096,
+                  "rss_after_delta_bytes": 4096,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.054237799951806664,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": 230.46657517648123,
+                  "rss_before_bytes": 751153152,
+                  "rss_peak_bytes": 751181824,
+                  "rss_after_bytes": 751181824,
+                  "rss_peak_delta_bytes": 28672,
+                  "rss_after_delta_bytes": 28672,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.040146199986338615,
+                  "cpu_time_s_total": 0.078125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 751230976,
+                  "rss_peak_bytes": 751353856,
+                  "rss_after_bytes": 751353856,
+                  "rss_peak_delta_bytes": 122880,
+                  "rss_after_delta_bytes": 122880,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.109375,
+                "cpu_utilization_median_pct": 230.46657517648123,
+                "cpu_utilization_p25_pct": 230.46657517648123,
+                "cpu_utilization_p75_pct": 230.46657517648123,
+                "rss_peak_median_bytes": 751181824,
+                "rss_peak_delta_median_bytes": 28672,
+                "rss_peak_delta_p25_bytes": 16384,
+                "rss_peak_delta_p75_bytes": 75776,
+                "rss_after_delta_median_bytes": 28672
+              }
+            },
+            "1000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 1000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.053172699990682304,
+                  "cpu_time_s_total": 0.15625,
+                  "cpu_utilization_avg_pct": 293.8538009681291,
+                  "rss_before_bytes": 753639424,
+                  "rss_peak_bytes": 753643520,
+                  "rss_after_bytes": 753643520,
+                  "rss_peak_delta_bytes": 4096,
+                  "rss_after_delta_bytes": 4096,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.0445233000209555,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 753614848,
+                  "rss_peak_bytes": 753614848,
+                  "rss_after_bytes": 752795648,
+                  "rss_peak_delta_bytes": 0,
+                  "rss_after_delta_bytes": -819200,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.057208299986086786,
+                  "cpu_time_s_total": 0.140625,
+                  "cpu_utilization_avg_pct": 245.81223359932105,
+                  "rss_before_bytes": 752816128,
+                  "rss_peak_bytes": 752959488,
+                  "rss_after_bytes": 752959488,
+                  "rss_peak_delta_bytes": 143360,
+                  "rss_after_delta_bytes": 143360,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.140625,
+                "cpu_utilization_median_pct": 269.8330172837251,
+                "cpu_utilization_p25_pct": 257.8226254415231,
+                "cpu_utilization_p75_pct": 281.8434091259271,
+                "rss_peak_median_bytes": 753614848,
+                "rss_peak_delta_median_bytes": 4096,
+                "rss_peak_delta_p25_bytes": 2048,
+                "rss_peak_delta_p75_bytes": 73728,
+                "rss_after_delta_median_bytes": 4096
+              }
+            },
+            "10000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 10000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.05399279994890094,
+                  "cpu_time_s_total": 0.203125,
+                  "cpu_utilization_avg_pct": 376.2075687725744,
+                  "rss_before_bytes": 757358592,
+                  "rss_peak_bytes": 757518336,
+                  "rss_after_bytes": 757518336,
+                  "rss_peak_delta_bytes": 159744,
+                  "rss_after_delta_bytes": 159744,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.04340920003596693,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": null,
+                  "rss_before_bytes": 757526528,
+                  "rss_peak_bytes": 757620736,
+                  "rss_after_bytes": 757620736,
+                  "rss_peak_delta_bytes": 94208,
+                  "rss_after_delta_bytes": 94208,
+                  "sample_count": 1,
+                  "unavailable_reason": "duration_below_sampling_resolution"
+                },
+                {
+                  "wall_time_s": 0.05040880001615733,
+                  "cpu_time_s_total": 0.125,
+                  "cpu_utilization_avg_pct": 247.97257613736937,
+                  "rss_before_bytes": 757600256,
+                  "rss_peak_bytes": 757669888,
+                  "rss_after_bytes": 757669888,
+                  "rss_peak_delta_bytes": 69632,
+                  "rss_after_delta_bytes": 69632,
+                  "sample_count": 1,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.125,
+                "cpu_utilization_median_pct": 312.0900724549719,
+                "cpu_utilization_p25_pct": 280.0313242961706,
+                "cpu_utilization_p75_pct": 344.1488206137731,
+                "rss_peak_median_bytes": 757620736,
+                "rss_peak_delta_median_bytes": 94208,
+                "rss_peak_delta_p25_bytes": 81920,
+                "rss_peak_delta_p75_bytes": 126976,
+                "rss_after_delta_median_bytes": 94208
+              }
+            },
+            "100000": {
+              "workload": "inference_batch",
+              "configuration": {
+                "n_jobs": -1,
+                "batch_size": 100000,
+                "operations_per_measurement": 1
+              },
+              "repeats": [
+                {
+                  "wall_time_s": 0.10722110001370311,
+                  "cpu_time_s_total": 0.671875,
+                  "cpu_utilization_avg_pct": 626.6257293705556,
+                  "rss_before_bytes": 788082688,
+                  "rss_peak_bytes": 788656128,
+                  "rss_after_bytes": 783454208,
+                  "rss_peak_delta_bytes": 573440,
+                  "rss_after_delta_bytes": -4628480,
+                  "sample_count": 2,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.1371371999848634,
+                  "cpu_time_s_total": 0.984375,
+                  "cpu_utilization_avg_pct": 717.8030469549116,
+                  "rss_before_bytes": 783462400,
+                  "rss_peak_bytes": 788385792,
+                  "rss_after_bytes": 788385792,
+                  "rss_peak_delta_bytes": 4923392,
+                  "rss_after_delta_bytes": 4923392,
+                  "sample_count": 2,
+                  "unavailable_reason": null
+                },
+                {
+                  "wall_time_s": 0.10890350001864135,
+                  "cpu_time_s_total": 0.65625,
+                  "cpu_utilization_avg_pct": 602.5977125507147,
+                  "rss_before_bytes": 788410368,
+                  "rss_peak_bytes": 790016000,
+                  "rss_after_bytes": 790016000,
+                  "rss_peak_delta_bytes": 1605632,
+                  "rss_after_delta_bytes": 1605632,
+                  "sample_count": 2,
+                  "unavailable_reason": null
+                }
+              ],
+              "summary": {
+                "n_repeats": 3,
+                "cpu_time_median_s": 0.671875,
+                "cpu_utilization_median_pct": 626.6257293705556,
+                "cpu_utilization_p25_pct": 614.6117209606352,
+                "cpu_utilization_p75_pct": 672.2143881627336,
+                "rss_peak_median_bytes": 788656128,
+                "rss_peak_delta_median_bytes": 1605632,
+                "rss_peak_delta_p25_bytes": 1089536,
+                "rss_peak_delta_p75_bytes": 3264512,
+                "rss_after_delta_median_bytes": 1605632
+              }
+            }
+          },
+          "n_jobs": -1
+        },
+        "inference_single_all_cores": {
+          "p50_us": 19721.79999575019,
+          "p95_us": 33601.36997071095,
+          "p99_us": 38508.14106524922,
+          "n_samples": 2000,
+          "resource": {
+            "workload": "inference_single",
+            "configuration": {
+              "n_jobs": -1,
+              "operations_per_measurement": 2000,
+              "n_samples": 2000
+            },
+            "repeats": [
+              {
+                "wall_time_s": 46.473030299996026,
+                "cpu_time_s_total": 44.84375,
+                "cpu_utilization_avg_pct": 96.49413802052808,
+                "rss_before_bytes": 802275328,
+                "rss_peak_bytes": 803835904,
+                "rss_after_bytes": 798167040,
+                "rss_peak_delta_bytes": 1560576,
+                "rss_after_delta_bytes": -4108288,
+                "sample_count": 675,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 43.672434699954465,
+                "cpu_time_s_total": 45.046875,
+                "cpu_utilization_avg_pct": 103.147157490734,
+                "rss_before_bytes": 798179328,
+                "rss_peak_bytes": 803713024,
+                "rss_after_bytes": 803311616,
+                "rss_peak_delta_bytes": 5533696,
+                "rss_after_delta_bytes": 5132288,
+                "sample_count": 654,
+                "unavailable_reason": null
+              },
+              {
+                "wall_time_s": 44.83583510003518,
+                "cpu_time_s_total": 45.984375,
+                "cpu_utilization_avg_pct": 102.56165608915784,
+                "rss_before_bytes": 803262464,
+                "rss_peak_bytes": 803835904,
+                "rss_after_bytes": 803323904,
+                "rss_peak_delta_bytes": 573440,
+                "rss_after_delta_bytes": 61440,
+                "sample_count": 671,
+                "unavailable_reason": null
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 45.046875,
+              "cpu_utilization_median_pct": 102.56165608915784,
+              "cpu_utilization_p25_pct": 99.52789705484295,
+              "cpu_utilization_p75_pct": 102.85440678994593,
+              "rss_peak_median_bytes": 803835904,
+              "rss_peak_delta_median_bytes": 1560576,
+              "rss_peak_delta_p25_bytes": 1067008,
+              "rss_peak_delta_p75_bytes": 3547136,
+              "rss_after_delta_median_bytes": 61440
+            }
+          },
+          "n_jobs": -1
+        }
+      }
+    }
+  },
+  "resource": {
+    "schema_version": 2,
+    "scope": "Tier 1, model-only: scikit-learn predict() on pre-extracted features. PCAP parsing, feature extraction, data loading, training and tuning are excluded. Host measurement, not a Raspberry Pi measurement.",
+    "method": {
+      "isolation": "fresh subprocess per measurement; no training data; no sampler thread; GC enabled",
+      "cpu": "process_time delta / packets over >= min_seconds of continuous predict(); n_jobs=1; pinned CPU",
+      "memory": "RSS/USS ladder (baseline, sklearn import, model load, input, warm-up, after loop) + OS peak RSS",
+      "core_load": "core_load_pct = rate_pps * cpu_us_per_pkt * 1e-4 (100% = one fully busy core)"
+    },
+    "env": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+      "cpu_logical": 12,
+      "cpu_physical": 10,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "numpy": "2.5.3",
+      "sklearn": "1.9.1",
+      "on_ac_power": true
+    },
+    "config": {
+      "min_seconds": 5.0,
+      "repeats": 7,
+      "batch_sizes": [
+        1,
+        1000,
+        100000
+      ],
+      "sample_rows": 100000,
+      "sample_seed": 42,
+      "pin_cpu_requested": 2,
+      "reference_rates_pps": [
+        100,
+        1000,
+        10000,
+        100000
+      ]
+    },
+    "models": {
+      "dt": {
+        "by_batch": {
+          "1": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 74.62075100664856,
+              "q25": 74.21541527264438,
+              "q75": 75.50429514375399,
+              "min": 73.91385534669489,
+              "max": 76.94459988808057
+            },
+            "wall_us_per_pkt_median": 77.80518174977732,
+            "cpu_over_wall_median": 0.9624869679168604,
+            "n_calls_median": 64264.0,
+            "max_pps_per_core": 13401.098039215687,
+            "core_load_pct_at_rate": {
+              "100": 0.7462075100664856,
+              "1000": 7.462075100664856,
+              "10000": 74.62075100664856,
+              "100000": 746.2075100664856
+            },
+            "peak_rss_mib": {
+              "median": 171.37109375,
+              "q25": 171.19140625,
+              "q75": 171.583984375,
+              "min": 168.4375,
+              "max": 171.71875
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -2.30078125,
+                "q25": -2.482421875,
+                "q75": -2.224609375,
+                "min": -3.1328125,
+                "max": -0.390625
+              },
+              "inference_growth_uss_mib": {
+                "median": -1.4609375,
+                "q25": -1.642578125,
+                "q75": -1.384765625,
+                "min": -2.29296875,
+                "max": 0.44921875
+              },
+              "input_rss_mib": {
+                "median": 8.8046875,
+                "q25": 8.8046875,
+                "q75": 8.8046875,
+                "min": 8.8046875,
+                "max": 9.7109375
+              },
+              "input_uss_mib": {
+                "median": 8.77734375,
+                "q25": 8.77734375,
+                "q75": 8.77734375,
+                "min": 8.77734375,
+                "max": 8.80859375
+              },
+              "model_load_rss_mib": {
+                "median": 0.3046875,
+                "q25": 0.3046875,
+                "q75": 0.30859375,
+                "min": -0.62890625,
+                "max": 0.3125
+              },
+              "model_load_uss_mib": {
+                "median": 0.0,
+                "q25": 0.0,
+                "q75": 0.0,
+                "min": -0.56640625,
+                "max": 0.0
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.390625,
+                "q25": 120.31640625,
+                "q75": 120.74609375,
+                "min": 117.58203125,
+                "max": 120.96875
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.6171875,
+                "q25": 91.537109375,
+                "q75": 91.90234375,
+                "min": 89.1796875,
+                "max": 92.0546875
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.109375,
+              "1_sklearn_imported": 161.67578125,
+              "2_model_loaded": 161.98046875,
+              "3_input_loaded": 170.78515625,
+              "4_after_warmup": 171.203125,
+              "5_after_loop": 168.39453125
+            },
+            "model_file_bytes": 8249
+          },
+          "1000": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 0.12495456197746276,
+              "q25": 0.1244717467391327,
+              "q75": 0.12615687418549584,
+              "min": 0.1224036081553497,
+              "max": 0.12680491146711637
+            },
+            "wall_us_per_pkt_median": 0.12815824682858568,
+            "cpu_over_wall_median": 0.9718567290901362,
+            "n_calls_median": 39015.0,
+            "max_pps_per_core": 8002909.09090909,
+            "core_load_pct_at_rate": {
+              "100": 0.0012495456197746274,
+              "1000": 0.012495456197746276,
+              "10000": 0.12495456197746276,
+              "100000": 1.2495456197746275
+            },
+            "peak_rss_mib": {
+              "median": 170.8984375,
+              "q25": 170.84765625,
+              "q75": 171.185546875,
+              "min": 169.46484375,
+              "max": 171.26171875
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -2.8046875,
+                "q25": -3.10546875,
+                "q75": -2.083984375,
+                "min": -3.48828125,
+                "max": -1.43359375
+              },
+              "inference_growth_uss_mib": {
+                "median": -1.96484375,
+                "q25": -2.26171875,
+                "q75": -1.576171875,
+                "min": -2.6484375,
+                "max": -0.8046875
+              },
+              "input_rss_mib": {
+                "median": 8.8046875,
+                "q25": 8.8046875,
+                "q75": 8.8046875,
+                "min": 6.9765625,
+                "max": 8.8046875
+              },
+              "input_uss_mib": {
+                "median": 8.77734375,
+                "q25": 8.77734375,
+                "q75": 8.77734375,
+                "min": 7.82421875,
+                "max": 8.77734375
+              },
+              "model_load_rss_mib": {
+                "median": 0.3125,
+                "q25": 0.30859375,
+                "q75": 0.3125,
+                "min": 0.3046875,
+                "max": 0.80859375
+              },
+              "model_load_uss_mib": {
+                "median": 0.0,
+                "q25": 0.0,
+                "q75": 0.0,
+                "min": 0.0,
+                "max": 0.0
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.56640625,
+                "q25": 120.44921875,
+                "q75": 120.755859375,
+                "min": 118.33984375,
+                "max": 120.80078125
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.7890625,
+                "q25": 91.673828125,
+                "q75": 91.912109375,
+                "min": 90.0625,
+                "max": 92.01171875
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.171875,
+              "1_sklearn_imported": 161.73828125,
+              "2_model_loaded": 162.05078125,
+              "3_input_loaded": 170.73046875,
+              "4_after_warmup": 170.83203125,
+              "5_after_loop": 167.69921875
+            },
+            "model_file_bytes": 8249
+          },
+          "100000": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 0.04658760890609874,
+              "q25": 0.04647898789720447,
+              "q75": 0.04687497138341282,
+              "min": 0.04567762535477767,
+              "max": 0.04690545808966862
+            },
+            "wall_us_per_pkt_median": 0.04793769540242901,
+            "cpu_over_wall_median": 0.9648108540096392,
+            "n_calls_median": 1044.0,
+            "max_pps_per_core": 21464935.064935066,
+            "core_load_pct_at_rate": {
+              "100": 0.00046587608906098737,
+              "1000": 0.004658760890609874,
+              "10000": 0.04658760890609874,
+              "100000": 0.4658760890609874
+            },
+            "peak_rss_mib": {
+              "median": 172.55078125,
+              "q25": 172.296875,
+              "q75": 172.603515625,
+              "min": 171.30859375,
+              "max": 172.6328125
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -1.1171875,
+                "q25": -1.248046875,
+                "q75": -1.00390625,
+                "min": -1.37109375,
+                "max": 0.27734375
+              },
+              "inference_growth_uss_mib": {
+                "median": -0.87109375,
+                "q25": -0.970703125,
+                "q75": -0.759765625,
+                "min": -1.09375,
+                "max": 0.5234375
+              },
+              "input_rss_mib": {
+                "median": 8.8046875,
+                "q25": 8.8046875,
+                "q75": 8.8046875,
+                "min": 8.8046875,
+                "max": 8.80859375
+              },
+              "input_uss_mib": {
+                "median": 8.77734375,
+                "q25": 8.77734375,
+                "q75": 8.77734375,
+                "min": 8.77734375,
+                "max": 8.78125
+              },
+              "model_load_rss_mib": {
+                "median": 0.3046875,
+                "q25": 0.3046875,
+                "q75": 0.3125,
+                "min": 0.3046875,
+                "max": 0.953125
+              },
+              "model_load_uss_mib": {
+                "median": 0.0,
+                "q25": 0.0,
+                "q75": 0.0,
+                "min": 0.0,
+                "max": 0.015625
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.515625,
+                "q25": 120.31640625,
+                "q75": 120.6875,
+                "min": 118.5546875,
+                "max": 120.72265625
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.73046875,
+                "q25": 91.53515625,
+                "q75": 91.861328125,
+                "min": 90.26953125,
+                "max": 91.90625
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.18359375,
+              "1_sklearn_imported": 161.8203125,
+              "2_model_loaded": 162.125,
+              "3_input_loaded": 170.9296875,
+              "4_after_warmup": 172.55078125,
+              "5_after_loop": 169.6953125
+            },
+            "model_file_bytes": 8249
+          }
+        },
+        "runs": {
+          "1": [
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 60715,
+              "n_packets": 60715,
+              "min_seconds": 5.0,
+              "wall_s": 5.000053800060414,
+              "cpu_s": 4.5625,
+              "cpu_us_per_pkt": 75.14617475088528,
+              "wall_us_per_pkt": 82.35285843795461,
+              "cpu_over_wall": 0.9124901815946207,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 42999808,
+                  "uss_bytes": 27013120
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 166293504,
+                  "uss_bytes": 120524800
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 165634048,
+                  "uss_bytes": 119930880
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 175816704,
+                  "uss_bytes": 129167360
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 176459776,
+                  "uss_bytes": 129773568
+                },
+                "5_after_loop": {
+                  "rss_bytes": 175407104,
+                  "uss_bytes": 129638400
+                }
+              },
+              "peak_rss_bytes": 176619520,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 64673,
+              "n_packets": 64673,
+              "min_seconds": 5.0,
+              "wall_s": 5.000039000064135,
+              "cpu_s": 4.90625,
+              "cpu_us_per_pkt": 75.8624155366227,
+              "wall_us_per_pkt": 77.312618868216,
+              "cpu_over_wall": 0.9812423462971126,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43159552,
+                  "uss_bytes": 27037696
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169324544,
+                  "uss_bytes": 123027456
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169644032,
+                  "uss_bytes": 123027456
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 178876416,
+                  "uss_bytes": 132231168
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179339264,
+                  "uss_bytes": 132657152
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176197632,
+                  "uss_bytes": 130433024
+                }
+              },
+              "peak_rss_bytes": 179499008,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 65252,
+              "n_packets": 65252,
+              "min_seconds": 5.0,
+              "wall_s": 5.000046599889174,
+              "cpu_s": 4.828125,
+              "cpu_us_per_pkt": 73.99198492000245,
+              "wall_us_per_pkt": 76.62671795330678,
+              "cpu_over_wall": 0.9656160004802786,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43102208,
+                  "uss_bytes": 26980352
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169541632,
+                  "uss_bytes": 123248640
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169869312,
+                  "uss_bytes": 123248640
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179101696,
+                  "uss_bytes": 132452352
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179535872,
+                  "uss_bytes": 132849664
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176574464,
+                  "uss_bytes": 130805760
+                }
+              },
+              "peak_rss_bytes": 179695616,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 64264,
+              "n_packets": 64264,
+              "min_seconds": 5.0,
+              "wall_s": 5.00007219996769,
+              "cpu_s": 4.75,
+              "cpu_us_per_pkt": 73.91385534669489,
+              "wall_us_per_pkt": 77.80518174977732,
+              "cpu_over_wall": 0.9499862822042238,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43098112,
+                  "uss_bytes": 27111424
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169881600,
+                  "uss_bytes": 123576320
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170201088,
+                  "uss_bytes": 123576320
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179433472,
+                  "uss_bytes": 132780032
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179896320,
+                  "uss_bytes": 133206016
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177029120,
+                  "uss_bytes": 131256320
+                }
+              },
+              "peak_rss_bytes": 180060160,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 64074,
+              "n_packets": 64074,
+              "min_seconds": 5.0,
+              "wall_s": 5.000059699988924,
+              "cpu_s": 4.78125,
+              "cpu_us_per_pkt": 74.62075100664856,
+              "wall_us_per_pkt": 78.03570402954277,
+              "cpu_over_wall": 0.9562385825134431,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43106304,
+                  "uss_bytes": 27119616
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169951232,
+                  "uss_bytes": 123645952
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170270720,
+                  "uss_bytes": 123645952
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179503104,
+                  "uss_bytes": 132849664
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179896320,
+                  "uss_bytes": 131510272
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176218112,
+                  "uss_bytes": 130445312
+                }
+              },
+              "peak_rss_bytes": 179896320,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 65490,
+              "n_packets": 65490,
+              "min_seconds": 5.0,
+              "wall_s": 5.000040799961425,
+              "cpu_s": 4.875,
+              "cpu_us_per_pkt": 74.4388456252863,
+              "wall_us_per_pkt": 76.34815696994083,
+              "cpu_over_wall": 0.9749920440724423,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43372544,
+                  "uss_bytes": 27250688
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169529344,
+                  "uss_bytes": 123228160
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169848832,
+                  "uss_bytes": 123228160
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179081216,
+                  "uss_bytes": 132431872
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179519488,
+                  "uss_bytes": 133095424
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176668672,
+                  "uss_bytes": 130899968
+                }
+              },
+              "peak_rss_bytes": 179941376,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1,
+              "n_calls": 62545,
+              "n_packets": 62545,
+              "min_seconds": 5.0,
+              "wall_s": 5.00006770004984,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 76.94459988808057,
+              "wall_us_per_pkt": 79.94352386361562,
+              "cpu_over_wall": 0.9624869679168604,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43167744,
+                  "uss_bytes": 27045888
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169406464,
+                  "uss_bytes": 123113472
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169734144,
+                  "uss_bytes": 123113472
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 178966528,
+                  "uss_bytes": 132317184
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179355648,
+                  "uss_bytes": 132669440
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176705536,
+                  "uss_bytes": 130936832
+                }
+              },
+              "peak_rss_bytes": 179515392,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ],
+          "1000": [
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 39189,
+              "n_packets": 39189000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000618800055236,
+              "cpu_s": 4.796875,
+              "cpu_us_per_pkt": 0.1224036081553497,
+              "wall_us_per_pkt": 0.1276026129795411,
+              "cpu_over_wall": 0.9592562824318892,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43114496,
+                  "uss_bytes": 26992640
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169390080,
+                  "uss_bytes": 123101184
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169717760,
+                  "uss_bytes": 123101184
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 178950144,
+                  "uss_bytes": 132304896
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179060736,
+                  "uss_bytes": 132378624
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176304128,
+                  "uss_bytes": 130539520
+                }
+              },
+              "peak_rss_bytes": 179200000,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 38514,
+              "n_packets": 38514000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000006499933079,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 0.12495456197746276,
+              "wall_us_per_pkt": 0.12982309030308664,
+              "cpu_over_wall": 0.9624987487645089,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43171840,
+                  "uss_bytes": 27049984
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169594880,
+                  "uss_bytes": 123297792
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169922560,
+                  "uss_bytes": 123297792
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 177238016,
+                  "uss_bytes": 131502080
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 178282496,
+                  "uss_bytes": 131592192
+                },
+                "5_after_loop": {
+                  "rss_bytes": 175734784,
+                  "uss_bytes": 129961984
+                }
+              },
+              "peak_rss_bytes": 179154944,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 38586,
+              "n_packets": 38586000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000107800005935,
+              "cpu_s": 4.875,
+              "cpu_us_per_pkt": 0.12634116000621987,
+              "wall_us_per_pkt": 0.1295834706890047,
+              "cpu_over_wall": 0.9749789794520457,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43282432,
+                  "uss_bytes": 27160576
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 167370752,
+                  "uss_bytes": 121597952
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 168218624,
+                  "uss_bytes": 121597952
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 177451008,
+                  "uss_bytes": 130801664
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 177557504,
+                  "uss_bytes": 130871296
+                },
+                "5_after_loop": {
+                  "rss_bytes": 175726592,
+                  "uss_bytes": 129957888
+                }
+              },
+              "peak_rss_bytes": 177696768,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 37952,
+              "n_packets": 37952000,
+              "min_seconds": 5.0,
+              "wall_s": 5.00001589988824,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 0.12680491146711637,
+              "wall_us_per_pkt": 0.13174578151054595,
+              "cpu_over_wall": 0.9624969392812469,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43147264,
+                  "uss_bytes": 27025408
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169472000,
+                  "uss_bytes": 123170816
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169791488,
+                  "uss_bytes": 123170816
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179023872,
+                  "uss_bytes": 132374528
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179130368,
+                  "uss_bytes": 132444160
+                },
+                "5_after_loop": {
+                  "rss_bytes": 175366144,
+                  "uss_bytes": 129597440
+                }
+              },
+              "peak_rss_bytes": 179138560,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 39015,
+              "n_packets": 39015000,
+              "min_seconds": 5.0,
+              "wall_s": 5.0000940000172704,
+              "cpu_s": 4.859375,
+              "cpu_us_per_pkt": 0.12455145456875562,
+              "wall_us_per_pkt": 0.12815824682858568,
+              "cpu_over_wall": 0.9718567290901362,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43233280,
+                  "uss_bytes": 27111424
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169902080,
+                  "uss_bytes": 123592704
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170221568,
+                  "uss_bytes": 123592704
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179453952,
+                  "uss_bytes": 132796416
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179560448,
+                  "uss_bytes": 132866048
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176414720,
+                  "uss_bytes": 130646016
+                }
+              },
+              "peak_rss_bytes": 179564544,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 39065,
+              "n_packets": 39065000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000067400047556,
+              "cpu_s": 4.859375,
+              "cpu_us_per_pkt": 0.12439203890950978,
+              "wall_us_per_pkt": 0.1279935338550507,
+              "cpu_over_wall": 0.971861899292354,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43110400,
+                  "uss_bytes": 27119616
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169758720,
+                  "uss_bytes": 123457536
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170086400,
+                  "uss_bytes": 123457536
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179318784,
+                  "uss_bytes": 132661248
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179429376,
+                  "uss_bytes": 132734976
+                },
+                "5_after_loop": {
+                  "rss_bytes": 175845376,
+                  "uss_bytes": 130068480
+                }
+              },
+              "peak_rss_bytes": 179437568,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 1000,
+              "n_calls": 39071,
+              "n_packets": 39071000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000025499961339,
+              "cpu_s": 4.921875,
+              "cpu_us_per_pkt": 0.12597258836477182,
+              "wall_us_per_pkt": 0.12797280591644286,
+              "cpu_over_wall": 0.9843699797207148,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43184128,
+                  "uss_bytes": 27062272
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169779200,
+                  "uss_bytes": 123478016
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170106880,
+                  "uss_bytes": 123478016
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179339264,
+                  "uss_bytes": 132681728
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179445760,
+                  "uss_bytes": 132751360
+                },
+                "5_after_loop": {
+                  "rss_bytes": 176398336,
+                  "uss_bytes": 130621440
+                }
+              },
+              "peak_rss_bytes": 179580928,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ],
+          "100000": [
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1044,
+              "n_packets": 104400000,
+              "min_seconds": 5.0,
+              "wall_s": 5.004695400013588,
+              "cpu_s": 4.890625,
+              "cpu_us_per_pkt": 0.046845067049808425,
+              "wall_us_per_pkt": 0.04793769540242901,
+              "cpu_over_wall": 0.9772073241433877,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43171840,
+                  "uss_bytes": 27185152
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169758720,
+                  "uss_bytes": 123461632
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170086400,
+                  "uss_bytes": 123461632
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179318784,
+                  "uss_bytes": 132665344
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 181018624,
+                  "uss_bytes": 134328320
+                },
+                "5_after_loop": {
+                  "rss_bytes": 178147328,
+                  "uss_bytes": 131751936
+                }
+              },
+              "peak_rss_bytes": 181018624,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1046,
+              "n_packets": 104600000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000769499922171,
+              "cpu_s": 4.90625,
+              "cpu_us_per_pkt": 0.04690487571701721,
+              "wall_us_per_pkt": 0.04780850382334771,
+              "cpu_over_wall": 0.9810990088778052,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43409408,
+                  "uss_bytes": 27287552
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169680896,
+                  "uss_bytes": 123379712
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170000384,
+                  "uss_bytes": 123379712
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179232768,
+                  "uss_bytes": 132583424
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 180932608,
+                  "uss_bytes": 134246400
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177938432,
+                  "uss_bytes": 131579904
+                }
+              },
+              "peak_rss_bytes": 180932608,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1026,
+              "n_packets": 102600000,
+              "min_seconds": 5.0,
+              "wall_s": 5.003695099963807,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 0.04690545808966862,
+              "wall_us_per_pkt": 0.04876895808931585,
+              "cpu_over_wall": 0.9617892185386776,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43278336,
+                  "uss_bytes": 27156480
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169648128,
+                  "uss_bytes": 123342848
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169967616,
+                  "uss_bytes": 123342848
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179200000,
+                  "uss_bytes": 132546560
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 180899840,
+                  "uss_bytes": 134209536
+                },
+                "5_after_loop": {
+                  "rss_bytes": 178102272,
+                  "uss_bytes": 131702784
+                }
+              },
+              "peak_rss_bytes": 180899840,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1033,
+              "n_packets": 103300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.0019930000416934,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 0.04658760890609874,
+              "wall_us_per_pkt": 0.04842200387262046,
+              "cpu_over_wall": 0.9621165003549357,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43134976,
+                  "uss_bytes": 27013120
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169185280,
+                  "uss_bytes": 122884096
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 169504768,
+                  "uss_bytes": 122884096
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 178737152,
+                  "uss_bytes": 132087808
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 180432896,
+                  "uss_bytes": 133746688
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177729536,
+                  "uss_bytes": 131338240
+                }
+              },
+              "peak_rss_bytes": 180432896,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1032,
+              "n_packets": 103200000,
+              "min_seconds": 5.0,
+              "wall_s": 5.003792400006205,
+              "cpu_s": 4.796875,
+              "cpu_us_per_pkt": 0.046481346899224806,
+              "wall_us_per_pkt": 0.048486360465176404,
+              "cpu_over_wall": 0.9586478847511842,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43098112,
+                  "uss_bytes": 27111424
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 167411712,
+                  "uss_bytes": 121765888
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 168411136,
+                  "uss_bytes": 121782272
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 177647616,
+                  "uss_bytes": 130990080
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 179630080,
+                  "uss_bytes": 132935680
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177938432,
+                  "uss_bytes": 131538944
+                }
+              },
+              "peak_rss_bytes": 179630080,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1059,
+              "n_packets": 105900000,
+              "min_seconds": 5.0,
+              "wall_s": 5.002435000031255,
+              "cpu_s": 4.921875,
+              "cpu_us_per_pkt": 0.046476628895184134,
+              "wall_us_per_pkt": 0.04723734655364736,
+              "cpu_over_wall": 0.9838958427184458,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43192320,
+                  "uss_bytes": 27070464
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169742336,
+                  "uss_bytes": 123441152
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170070016,
+                  "uss_bytes": 123441152
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179302400,
+                  "uss_bytes": 132644864
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 180998144,
+                  "uss_bytes": 134303744
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177864704,
+                  "uss_bytes": 131497984
+                }
+              },
+              "peak_rss_bytes": 180998144,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "dt_model.joblib",
+              "model_file_bytes": 8249,
+              "batch_size": 100000,
+              "n_calls": 1057,
+              "n_packets": 105700000,
+              "min_seconds": 5.0,
+              "wall_s": 5.004219199996442,
+              "cpu_s": 4.828125,
+              "cpu_us_per_pkt": 0.04567762535477767,
+              "wall_us_per_pkt": 0.047343606433268126,
+              "cpu_over_wall": 0.9648108540096392,
+              "pinned_cpu": 2,
+              "n_jobs": null,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43184128,
+                  "uss_bytes": 27062272
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169734144,
+                  "uss_bytes": 123432960
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 170053632,
+                  "uss_bytes": 123432960
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 179286016,
+                  "uss_bytes": 132636672
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 180977664,
+                  "uss_bytes": 134291456
+                },
+                "5_after_loop": {
+                  "rss_bytes": 177963008,
+                  "uss_bytes": 131604480
+                }
+              },
+              "peak_rss_bytes": 180977664,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ]
+        }
+      },
+      "rf": {
+        "by_batch": {
+          "1": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 2159.842609489051,
+              "q25": 2149.5418263390984,
+              "q75": 2174.3639380530976,
+              "min": 2104.028697571744,
+              "max": 2182.649667405765
+            },
+            "wall_us_per_pkt_median": 2212.907123869796,
+            "cpu_over_wall_median": 0.9810066318717484,
+            "n_calls_median": 2260.0,
+            "max_pps_per_core": 462.99669966996703,
+            "core_load_pct_at_rate": {
+              "100": 21.59842609489051,
+              "1000": 215.9842609489051,
+              "10000": 2159.842609489051,
+              "100000": 21598.42609489051
+            },
+            "peak_rss_mib": {
+              "median": 182.703125,
+              "q25": 182.58984375,
+              "q75": 182.775390625,
+              "min": 182.1640625,
+              "max": 183.34765625
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -7.78515625,
+                "q25": -7.97265625,
+                "q75": -7.3828125,
+                "min": -8.4140625,
+                "max": -6.87109375
+              },
+              "inference_growth_uss_mib": {
+                "median": -6.859375,
+                "q25": -7.044921875,
+                "q75": -6.453125,
+                "min": -7.48828125,
+                "max": -5.953125
+              },
+              "input_rss_mib": {
+                "median": 9.08203125,
+                "q25": 9.078125,
+                "q75": 9.109375,
+                "min": 9.0703125,
+                "max": 9.11328125
+              },
+              "input_uss_mib": {
+                "median": 8.79296875,
+                "q25": 8.79296875,
+                "q75": 8.79296875,
+                "min": 8.77734375,
+                "max": 8.796875
+              },
+              "model_load_rss_mib": {
+                "median": 11.5078125,
+                "q25": 11.474609375,
+                "q75": 11.78515625,
+                "min": 11.3828125,
+                "max": 12.1796875
+              },
+              "model_load_uss_mib": {
+                "median": 11.48828125,
+                "q25": 11.431640625,
+                "q75": 11.490234375,
+                "min": 11.3203125,
+                "max": 11.5
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.265625,
+                "q25": 119.712890625,
+                "q75": 120.423828125,
+                "min": 119.0,
+                "max": 121.078125
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.48828125,
+                "q25": 91.111328125,
+                "q75": 91.6484375,
+                "min": 90.48046875,
+                "max": 92.171875
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.1796875,
+              "1_sklearn_imported": 161.453125,
+              "2_model_loaded": 172.89453125,
+              "3_input_loaded": 181.97265625,
+              "4_after_warmup": 174.8359375,
+              "5_after_loop": 174.3828125
+            },
+            "model_file_bytes": 5829641
+          },
+          "1000": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 5.0372176591375775,
+              "q25": 4.98797042063902,
+              "q75": 5.043952442585955,
+              "min": 4.875997008973081,
+              "max": 5.081837381203801
+            },
+            "wall_us_per_pkt_median": 5.145519547266962,
+            "cpu_over_wall_median": 0.9773448051873337,
+            "n_calls_median": 972.0,
+            "max_pps_per_core": 198522.29299363054,
+            "core_load_pct_at_rate": {
+              "100": 0.05037217659137577,
+              "1000": 0.5037217659137577,
+              "10000": 5.0372176591375775,
+              "100000": 50.37217659137577
+            },
+            "peak_rss_mib": {
+              "median": 182.39453125,
+              "q25": 182.16015625,
+              "q75": 182.619140625,
+              "min": 181.9453125,
+              "max": 182.80078125
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -8.16015625,
+                "q25": -8.3046875,
+                "q75": -8.07421875,
+                "min": -8.484375,
+                "max": -7.53125
+              },
+              "inference_growth_uss_mib": {
+                "median": -7.234375,
+                "q25": -7.37890625,
+                "q75": -7.14453125,
+                "min": -7.5546875,
+                "max": -6.60546875
+              },
+              "input_rss_mib": {
+                "median": 9.10546875,
+                "q25": 9.078125,
+                "q75": 9.10546875,
+                "min": 9.0625,
+                "max": 9.10546875
+              },
+              "input_uss_mib": {
+                "median": 8.79296875,
+                "q25": 8.79296875,
+                "q75": 8.79296875,
+                "min": 8.77734375,
+                "max": 8.79296875
+              },
+              "model_load_rss_mib": {
+                "median": 11.515625,
+                "q25": 11.416015625,
+                "q75": 11.517578125,
+                "min": 11.38671875,
+                "max": 12.2109375
+              },
+              "model_load_uss_mib": {
+                "median": 11.48046875,
+                "q25": 11.353515625,
+                "q75": 11.490234375,
+                "min": 11.32421875,
+                "max": 11.51953125
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.37109375,
+                "q25": 120.3046875,
+                "q75": 120.6796875,
+                "min": 119.01953125,
+                "max": 120.8046875
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.6015625,
+                "q25": 91.51953125,
+                "q75": 91.904296875,
+                "min": 90.90234375,
+                "max": 92.03515625
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.1953125,
+              "1_sklearn_imported": 161.51953125,
+              "2_model_loaded": 173.0234375,
+              "3_input_loaded": 182.12890625,
+              "4_after_warmup": 182.1796875,
+              "5_after_loop": 173.94921875
+            },
+            "model_file_bytes": 5829641
+          },
+          "100000": {
+            "n_runs": 7,
+            "pinned_cpu": 2,
+            "cpu_us_per_pkt": {
+              "median": 2.1875,
+              "q25": 2.1773097826086953,
+              "q75": 2.1976902173913038,
+              "min": 2.167119565217391,
+              "max": 2.2214673913043477
+            },
+            "wall_us_per_pkt_median": 2.235523869546697,
+            "cpu_over_wall_median": 0.9763714079894569,
+            "n_calls_median": 23.0,
+            "max_pps_per_core": 457142.85714285716,
+            "core_load_pct_at_rate": {
+              "100": 0.021875,
+              "1000": 0.21874999999999997,
+              "10000": 2.1875,
+              "100000": 21.875
+            },
+            "peak_rss_mib": {
+              "median": 185.4453125,
+              "q25": 185.34375,
+              "q75": 185.53515625,
+              "min": 185.13671875,
+              "max": 185.75390625
+            },
+            "memory_mib": {
+              "inference_growth_rss_mib": {
+                "median": -4.67578125,
+                "q25": -4.73828125,
+                "q75": -4.59765625,
+                "min": -4.7890625,
+                "max": -4.50390625
+              },
+              "inference_growth_uss_mib": {
+                "median": -4.25,
+                "q25": -4.3125,
+                "q75": -4.169921875,
+                "min": -4.359375,
+                "max": -4.07421875
+              },
+              "input_rss_mib": {
+                "median": 9.0859375,
+                "q25": 9.08203125,
+                "q75": 9.10546875,
+                "min": 9.078125,
+                "max": 9.10546875
+              },
+              "input_uss_mib": {
+                "median": 8.79296875,
+                "q25": 8.79296875,
+                "q75": 8.79296875,
+                "min": 8.79296875,
+                "max": 8.79296875
+              },
+              "model_load_rss_mib": {
+                "median": 11.515625,
+                "q25": 11.435546875,
+                "q75": 11.51953125,
+                "min": 11.37890625,
+                "max": 11.54296875
+              },
+              "model_load_uss_mib": {
+                "median": 11.48046875,
+                "q25": 11.388671875,
+                "q75": 11.486328125,
+                "min": 11.31640625,
+                "max": 11.4921875
+              },
+              "sklearn_import_rss_mib": {
+                "median": 120.65625,
+                "q25": 120.572265625,
+                "q75": 120.720703125,
+                "min": 120.37109375,
+                "max": 120.91796875
+              },
+              "sklearn_import_uss_mib": {
+                "median": 91.8359375,
+                "q25": 91.732421875,
+                "q75": 91.896484375,
+                "min": 91.59375,
+                "max": 92.00390625
+              }
+            },
+            "ladder_rss_mib": {
+              "0_baseline": 41.12109375,
+              "1_sklearn_imported": 161.734375,
+              "2_model_loaded": 173.22265625,
+              "3_input_loaded": 182.328125,
+              "4_after_warmup": 178.51953125,
+              "5_after_loop": 177.6796875
+            },
+            "model_file_bytes": 5829641
+          }
+        },
+        "runs": {
+          "1": [
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2265,
+              "n_packets": 2265,
+              "min_seconds": 5.0,
+              "wall_s": 5.001852100016549,
+              "cpu_s": 4.765625,
+              "cpu_us_per_pkt": 2104.028697571744,
+              "wall_us_per_pkt": 2208.323222965364,
+              "cpu_over_wall": 0.9527720741651342,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43167744,
+                  "uss_bytes": 27045888
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169160704,
+                  "uss_bytes": 122859520
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181227520,
+                  "uss_bytes": 134905856
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190783488,
+                  "uss_bytes": 144125952
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 183111680,
+                  "uss_bytes": 137424896
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182620160,
+                  "uss_bytes": 136933376
+                }
+              },
+              "peak_rss_bytes": 191500288,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2260,
+              "n_packets": 2260,
+              "min_seconds": 5.0,
+              "wall_s": 5.001170099945739,
+              "cpu_s": 4.921875,
+              "cpu_us_per_pkt": 2177.820796460177,
+              "wall_us_per_pkt": 2212.907123869796,
+              "cpu_over_wall": 0.9841446904702164,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43184128,
+                  "uss_bytes": 27062272
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169504768,
+                  "uss_bytes": 123211776
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181440512,
+                  "uss_bytes": 135081984
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190959616,
+                  "uss_bytes": 144302080
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 183455744,
+                  "uss_bytes": 137773056
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182853632,
+                  "uss_bytes": 137170944
+                }
+              },
+              "peak_rss_bytes": 191664128,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2255,
+              "n_packets": 2255,
+              "min_seconds": 5.0,
+              "wall_s": 5.000545299961232,
+              "cpu_s": 4.921875,
+              "cpu_us_per_pkt": 2182.649667405765,
+              "wall_us_per_pkt": 2217.5367183863555,
+              "cpu_over_wall": 0.9842676557770926,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43499520,
+                  "uss_bytes": 27377664
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 168562688,
+                  "uss_bytes": 122253312
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181198848,
+                  "uss_bytes": 134303744
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190709760,
+                  "uss_bytes": 143507456
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 191406080,
+                  "uss_bytes": 144162816
+                },
+                "5_after_loop": {
+                  "rss_bytes": 183504896,
+                  "uss_bytes": 137265152
+                }
+              },
+              "peak_rss_bytes": 191418368,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2192,
+              "n_packets": 2192,
+              "min_seconds": 5.0,
+              "wall_s": 5.0017365999519825,
+              "cpu_s": 4.734375,
+              "cpu_us_per_pkt": 2159.842609489051,
+              "wall_us_per_pkt": 2281.8141423138604,
+              "cpu_over_wall": 0.9465462455670798,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43134976,
+                  "uss_bytes": 27148288
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 170094592,
+                  "uss_bytes": 123797504
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 182173696,
+                  "uss_bytes": 135839744
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191721472,
+                  "uss_bytes": 145059840
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 183328768,
+                  "uss_bytes": 137637888
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182898688,
+                  "uss_bytes": 137207808
+                }
+              },
+              "peak_rss_bytes": 192253952,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2260,
+              "n_packets": 2260,
+              "min_seconds": 5.0,
+              "wall_s": 5.0012404000153765,
+              "cpu_s": 4.90625,
+              "cpu_us_per_pkt": 2170.907079646018,
+              "wall_us_per_pkt": 2212.9382300952993,
+              "cpu_over_wall": 0.9810066318717484,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43180032,
+                  "uss_bytes": 27058176
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 167960576,
+                  "uss_bytes": 122318848
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 180731904,
+                  "uss_bytes": 134377472
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190255104,
+                  "uss_bytes": 143601664
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 190996480,
+                  "uss_bytes": 144302080
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182878208,
+                  "uss_bytes": 137199616
+                }
+              },
+              "peak_rss_bytes": 191012864,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2269,
+              "n_packets": 2269,
+              "min_seconds": 5.0,
+              "wall_s": 5.001741399988532,
+              "cpu_s": 4.890625,
+              "cpu_us_per_pkt": 2155.4098721903924,
+              "wall_us_per_pkt": 2204.3814014934032,
+              "cpu_over_wall": 0.977784457231478,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43188224,
+                  "uss_bytes": 27066368
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169295872,
+                  "uss_bytes": 122998784
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181293056,
+                  "uss_bytes": 134930432
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190812160,
+                  "uss_bytes": 144150528
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 182845440,
+                  "uss_bytes": 137158656
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182403072,
+                  "uss_bytes": 136716288
+                }
+              },
+              "peak_rss_bytes": 191578112,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1,
+              "n_calls": 2296,
+              "n_packets": 2296,
+              "min_seconds": 5.0,
+              "wall_s": 5.001799099962227,
+              "cpu_s": 4.921875,
+              "cpu_us_per_pkt": 2143.673780487805,
+              "wall_us_per_pkt": 2178.483928554977,
+              "cpu_over_wall": 0.9840209295965464,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43122688,
+                  "uss_bytes": 27000832
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169349120,
+                  "uss_bytes": 123052032
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181415936,
+                  "uss_bytes": 135098368
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190971904,
+                  "uss_bytes": 144318464
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 183160832,
+                  "uss_bytes": 137478144
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182661120,
+                  "uss_bytes": 136978432
+                }
+              },
+              "peak_rss_bytes": 191643648,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ],
+          "1000": [
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 972,
+              "n_packets": 972000,
+              "min_seconds": 5.0,
+              "wall_s": 5.001444999943487,
+              "cpu_s": 4.90625,
+              "cpu_us_per_pkt": 5.04758230452675,
+              "wall_us_per_pkt": 5.145519547266962,
+              "cpu_over_wall": 0.9809665006923873,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43130880,
+                  "uss_bytes": 27009024
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169746432,
+                  "uss_bytes": 123449344
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181821440,
+                  "uss_bytes": 135487488
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191369216,
+                  "uss_bytes": 144707584
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 191471616,
+                  "uss_bytes": 144769024
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182591488,
+                  "uss_bytes": 136900608
+                }
+              },
+              "peak_rss_bytes": 191680512,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 1003,
+              "n_packets": 1003000,
+              "min_seconds": 5.0,
+              "wall_s": 5.00399140000809,
+              "cpu_s": 4.890625,
+              "cpu_us_per_pkt": 4.875997008973081,
+              "wall_us_per_pkt": 4.98902432702701,
+              "cpu_over_wall": 0.9773448051873337,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43294720,
+                  "uss_bytes": 27172864
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169967616,
+                  "uss_bytes": 123678720
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181911552,
+                  "uss_bytes": 135557120
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191414272,
+                  "uss_bytes": 144760832
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 183500800,
+                  "uss_bytes": 137822208
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182935552,
+                  "uss_bytes": 137256960
+                }
+              },
+              "peak_rss_bytes": 191500288,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 961,
+              "n_packets": 961000,
+              "min_seconds": 5.0,
+              "wall_s": 5.001662199967541,
+              "cpu_s": 4.84375,
+              "cpu_us_per_pkt": 5.040322580645161,
+              "wall_us_per_pkt": 5.204643288207639,
+              "cpu_over_wall": 0.9684280557834223,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43147264,
+                  "uss_bytes": 27029504
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169365504,
+                  "uss_bytes": 123080704
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181305344,
+                  "uss_bytes": 134955008
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190824448,
+                  "uss_bytes": 144175104
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 190910464,
+                  "uss_bytes": 144220160
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182370304,
+                  "uss_bytes": 136695808
+                }
+              },
+              "peak_rss_bytes": 190984192,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 963,
+              "n_packets": 963000,
+              "min_seconds": 5.0,
+              "wall_s": 5.0056881000055,
+              "cpu_s": 4.828125,
+              "cpu_us_per_pkt": 5.013629283489096,
+              "wall_us_per_pkt": 5.19801464175026,
+              "cpu_over_wall": 0.9645277339582334,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43204608,
+                  "uss_bytes": 27082752
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169332736,
+                  "uss_bytes": 123027456
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181407744,
+                  "uss_bytes": 135073792
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190955520,
+                  "uss_bytes": 144293888
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 191029248,
+                  "uss_bytes": 144326656
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182398976,
+                  "uss_bytes": 136708096
+                }
+              },
+              "peak_rss_bytes": 191033344,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 974,
+              "n_packets": 974000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000921800034121,
+              "cpu_s": 4.90625,
+              "cpu_us_per_pkt": 5.0372176591375775,
+              "wall_us_per_pkt": 5.134416632478563,
+              "cpu_over_wall": 0.981069130088482,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43200512,
+                  "uss_bytes": 27078656
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169668608,
+                  "uss_bytes": 123375616
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181665792,
+                  "uss_bytes": 135307264
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191184896,
+                  "uss_bytes": 144527360
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 191270912,
+                  "uss_bytes": 144572416
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182288384,
+                  "uss_bytes": 136605696
+                }
+              },
+              "peak_rss_bytes": 191479808,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 995,
+              "n_packets": 995000,
+              "min_seconds": 5.0,
+              "wall_s": 5.000297500053421,
+              "cpu_s": 4.9375,
+              "cpu_us_per_pkt": 4.9623115577889445,
+              "wall_us_per_pkt": 5.025424623169267,
+              "cpu_over_wall": 0.9874412472352395,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43180032,
+                  "uss_bytes": 27058176
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169349120,
+                  "uss_bytes": 123043840
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181428224,
+                  "uss_bytes": 135094272
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190976000,
+                  "uss_bytes": 144314368
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 191049728,
+                  "uss_bytes": 144347136
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182337536,
+                  "uss_bytes": 136646656
+                }
+              },
+              "peak_rss_bytes": 191254528,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 1000,
+              "n_calls": 947,
+              "n_packets": 947000,
+              "min_seconds": 5.0,
+              "wall_s": 5.005129700060934,
+              "cpu_s": 4.8125,
+              "cpu_us_per_pkt": 5.081837381203801,
+              "wall_us_per_pkt": 5.285247835333616,
+              "cpu_over_wall": 0.9615135447821485,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43196416,
+                  "uss_bytes": 27074560
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 167997440,
+                  "uss_bytes": 122392576
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 180801536,
+                  "uss_bytes": 134471680
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190349312,
+                  "uss_bytes": 143691776
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 190427136,
+                  "uss_bytes": 143728640
+                },
+                "5_after_loop": {
+                  "rss_bytes": 182452224,
+                  "uss_bytes": 136765440
+                }
+              },
+              "peak_rss_bytes": 190783488,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ],
+          "100000": [
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.226904299925081,
+              "cpu_s": 5.046875,
+              "cpu_us_per_pkt": 2.194293478260869,
+              "wall_us_per_pkt": 2.2725670869239485,
+              "cpu_over_wall": 0.9655571845982216,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43171840,
+                  "uss_bytes": 27049984
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169558016,
+                  "uss_bytes": 123269120
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181637120,
+                  "uss_bytes": 135311360
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191184896,
+                  "uss_bytes": 144531456
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187113472,
+                  "uss_bytes": 140906496
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186310656,
+                  "uss_bytes": 140103680
+                }
+              },
+              "peak_rss_bytes": 194453504,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.1022072999039665,
+              "cpu_s": 5.0625,
+              "cpu_us_per_pkt": 2.201086956521739,
+              "wall_us_per_pkt": 2.2183509999582465,
+              "cpu_over_wall": 0.9922176231638582,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43143168,
+                  "uss_bytes": 27021312
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169709568,
+                  "uss_bytes": 123408384
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181702656,
+                  "uss_bytes": 135352320
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191229952,
+                  "uss_bytes": 144572416
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187244544,
+                  "uss_bytes": 141037568
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186208256,
+                  "uss_bytes": 140001280
+                }
+              },
+              "peak_rss_bytes": 194498560,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.1417048999574035,
+              "cpu_s": 4.984375,
+              "cpu_us_per_pkt": 2.167119565217391,
+              "wall_us_per_pkt": 2.235523869546697,
+              "cpu_over_wall": 0.9694012194362405,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43098112,
+                  "uss_bytes": 27111424
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169889792,
+                  "uss_bytes": 123584512
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181968896,
+                  "uss_bytes": 135634944
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191516672,
+                  "uss_bytes": 144855040
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187850752,
+                  "uss_bytes": 141635584
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186593280,
+                  "uss_bytes": 140378112
+                }
+              },
+              "peak_rss_bytes": 194777088,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.167850299971178,
+              "cpu_s": 5.0,
+              "cpu_us_per_pkt": 2.1739130434782608,
+              "wall_us_per_pkt": 2.2468914347700775,
+              "cpu_over_wall": 0.9675202859548555,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43118592,
+                  "uss_bytes": 27131904
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169590784,
+                  "uss_bytes": 123289600
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181579776,
+                  "uss_bytes": 135229440
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191107072,
+                  "uss_bytes": 144449536
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187052032,
+                  "uss_bytes": 140845056
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186339328,
+                  "uss_bytes": 140132352
+                }
+              },
+              "peak_rss_bytes": 194375680,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.137005200027488,
+              "cpu_s": 5.015625,
+              "cpu_us_per_pkt": 2.1807065217391304,
+              "wall_us_per_pkt": 2.2334805217510816,
+              "cpu_over_wall": 0.9763714079894569,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 42909696,
+                  "uss_bytes": 26787840
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169426944,
+                  "uss_bytes": 123121664
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181530624,
+                  "uss_bytes": 135168000
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191049728,
+                  "uss_bytes": 144388096
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187138048,
+                  "uss_bytes": 140922880
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186146816,
+                  "uss_bytes": 139931648
+                }
+              },
+              "peak_rss_bytes": 194318336,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.080722999991849,
+              "cpu_s": 5.03125,
+              "cpu_us_per_pkt": 2.1875,
+              "wall_us_per_pkt": 2.2090099999964563,
+              "cpu_over_wall": 0.9902626063274994,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43200512,
+                  "uss_bytes": 27078656
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169418752,
+                  "uss_bytes": 123121664
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181350400,
+                  "uss_bytes": 134987776
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 190869504,
+                  "uss_bytes": 144207872
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187281408,
+                  "uss_bytes": 141070336
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186146816,
+                  "uss_bytes": 139935744
+                }
+              },
+              "peak_rss_bytes": 194129920,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            },
+            {
+              "model_file": "rf_model.joblib",
+              "model_file_bytes": 5829641,
+              "batch_size": 100000,
+              "n_calls": 23,
+              "n_packets": 2300000,
+              "min_seconds": 5.0,
+              "wall_s": 5.215445599984378,
+              "cpu_s": 5.109375,
+              "cpu_us_per_pkt": 2.2214673913043477,
+              "wall_us_per_pkt": 2.2675850434714686,
+              "cpu_over_wall": 0.9796622171680411,
+              "pinned_cpu": 2,
+              "n_jobs": 1,
+              "ladder": {
+                "0_baseline": {
+                  "rss_bytes": 43102208,
+                  "uss_bytes": 27115520
+                },
+                "1_sklearn_imported": {
+                  "rss_bytes": 169705472,
+                  "uss_bytes": 123412480
+                },
+                "2_model_loaded": {
+                  "rss_bytes": 181780480,
+                  "uss_bytes": 135450624
+                },
+                "3_input_loaded": {
+                  "rss_bytes": 191328256,
+                  "uss_bytes": 144670720
+                },
+                "4_after_warmup": {
+                  "rss_bytes": 187191296,
+                  "uss_bytes": 140980224
+                },
+                "5_after_loop": {
+                  "rss_bytes": 186314752,
+                  "uss_bytes": 140103680
+                }
+              },
+              "peak_rss_bytes": 194596864,
+              "python": "3.12.10",
+              "numpy": "2.5.3",
+              "sklearn": "1.9.1",
+              "platform": "Windows-11-10.0.26200-SP0"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "pareto": {
+    "dt": [
+      {
+        "alpha": 0.0,
+        "leaves": "5784",
+        "depth": 44,
+        "test_f1": 0.9978016300669773,
+        "inference_us_per_pkt": 0.07447154996445399
+      },
+      {
+        "alpha": 2.5049056996973707e-11,
+        "leaves": "5750",
+        "depth": 44,
+        "test_f1": 0.9978016300669773,
+        "inference_us_per_pkt": 0.07345607975447686
+      },
+      {
+        "alpha": 8.845608234140321e-10,
+        "leaves": "5641",
+        "depth": 44,
+        "test_f1": 0.9978016300669773,
+        "inference_us_per_pkt": 0.07075088110211152
+      },
+      {
+        "alpha": 2.467661997756067e-08,
+        "leaves": "5192",
+        "depth": 44,
+        "test_f1": 0.9977998704869478,
+        "inference_us_per_pkt": 0.06728408760128533
+      },
+      {
+        "alpha": 7.400891904689618e-07,
+        "leaves": "1257",
+        "depth": 27,
+        "test_f1": 0.9972240399029875,
+        "inference_us_per_pkt": 0.06214906889674637
+      },
+      {
+        "alpha": 2.1585530028714404e-05,
+        "leaves": "211",
+        "depth": 18,
+        "test_f1": 0.9946393574829594,
+        "inference_us_per_pkt": 0.06090113171780441
+      },
+      {
+        "alpha": 0.0006614329420471194,
+        "leaves": "44",
+        "depth": 9,
+        "test_f1": 0.967870631990142,
+        "inference_us_per_pkt": 0.047235588975263594
+      },
+      {
+        "alpha": 0.10092212059856756,
+        "leaves": "2",
+        "depth": 1,
+        "test_f1": 0.8168921791698139,
+        "inference_us_per_pkt": 0.03926499714205001
+      }
+    ],
+    "rf": [
+      {
+        "n_trees": 1,
+        "test_f1": 0.9830061441893863,
+        "inference_us_per_pkt": 0.0644373215655309
+      },
+      {
+        "n_trees": 5,
+        "test_f1": 0.9912238920610676,
+        "inference_us_per_pkt": 0.2681313165355616
+      },
+      {
+        "n_trees": 10,
+        "test_f1": 0.9950893072711477,
+        "inference_us_per_pkt": 0.5331281919875717
+      },
+      {
+        "n_trees": 25,
+        "test_f1": 0.9951315716580799,
+        "inference_us_per_pkt": 1.2326429531302867
+      },
+      {
+        "n_trees": 50,
+        "test_f1": 0.9949783256684082,
+        "inference_us_per_pkt": 2.554002290279324
+      }
+    ]
+  },
+  "rf_seed_variance": {
+    "seeds": [
+      42,
+      123,
+      999
+    ],
+    "f1_scores": [
+      0.9949783256684082,
+      0.995218134146509,
+      0.9950742887261405
+    ],
+    "mean_f1": 0.9950902495136859,
+    "std_f1": 9.854977286141997e-05
+  }
+}

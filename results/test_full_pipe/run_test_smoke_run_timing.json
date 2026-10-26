@@ -1,0 +1,992 @@
+{
+  "env": {
+    "cpu_model": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "cpu_cores": 12,
+    "cpu_logical_cores": 12,
+    "cpu_physical_cores": 10,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy_version": "2.5.3",
+    "sklearn_version": "1.9.1"
+  },
+  "notes": "Feature extraction cost is NOT included in these timings.",
+  "resource_profiling": {
+    "schema_version": 1,
+    "library": "psutil",
+    "scope": "model predict/testing only; model training, feature extraction, data loading, tuning, serialization, graphing and report generation are excluded",
+    "process_scope": "current process plus recursive child processes",
+    "cpu_definition": "aggregate process-tree user+system CPU seconds; average utilization = 100 * CPU seconds / wall seconds; may exceed 100 for parallel workloads",
+    "memory_definition": "aggregate process-tree RSS bytes sampled during workload; shared pages can be counted by more than one process",
+    "sampling_interval_s": 0.05,
+    "status": "complete"
+  },
+  "models": {
+    "dt": {
+      "static": {
+        "depth": 1,
+        "leaves": "2",
+        "model_size_bytes": 1529,
+        "model_size_kb": 1.5
+      },
+      "training_cost": {
+        "tuning_time_s": 0.026404600008390844,
+        "tuning_cpu_s": 0.03125,
+        "fit_time_s": 0.0023392000002786517,
+        "fit_cpu_s": 0.0,
+        "total_training_cost_s": 0.028743800008669496,
+        "n_rows_tuning": 236,
+        "n_rows_fit": 1200,
+        "n_candidates": 2,
+        "n_fits_tuning": 9,
+        "n_jobs_tuning": 1,
+        "n_jobs_fit": 1
+      },
+      "inference_batch": {
+        "1": {
+          "median_us_per_pkt": 228.29999215900898,
+          "q25_us_per_pkt": 151.7999917268753,
+          "q75_us_per_pkt": 472.7999912574887
+        },
+        "10": {
+          "median_us_per_pkt": 14.009990263730288,
+          "q25_us_per_pkt": 11.840008664876223,
+          "q75_us_per_pkt": 16.42000861465931
+        },
+        "100": {
+          "median_us_per_pkt": 1.153999473899603,
+          "q25_us_per_pkt": 1.012999564409256,
+          "q75_us_per_pkt": 1.5049998182803392
+        },
+        "resource": {
+          "1": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 1,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.016706799971871078,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 206118912,
+                "rss_peak_bytes": 206118912,
+                "rss_after_bytes": 203223040,
+                "rss_peak_delta_bytes": 0,
+                "rss_after_delta_bytes": -2895872,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.028226500027813017,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203300864,
+                "rss_peak_bytes": 203362304,
+                "rss_after_bytes": 203345920,
+                "rss_peak_delta_bytes": 61440,
+                "rss_after_delta_bytes": 45056,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.01726659992709756,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203386880,
+                "rss_peak_bytes": 203493376,
+                "rss_after_bytes": 203493376,
+                "rss_peak_delta_bytes": 106496,
+                "rss_after_delta_bytes": 106496,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 203493376,
+              "rss_peak_delta_median_bytes": 61440,
+              "rss_peak_delta_p25_bytes": 30720,
+              "rss_peak_delta_p75_bytes": 83968,
+              "rss_after_delta_median_bytes": 45056
+            }
+          },
+          "10": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 10,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.02098979998845607,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203567104,
+                "rss_peak_bytes": 203677696,
+                "rss_after_bytes": 203669504,
+                "rss_peak_delta_bytes": 110592,
+                "rss_after_delta_bytes": 102400,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.025278399931266904,
+                "cpu_time_s_total": 0.125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203669504,
+                "rss_peak_bytes": 203694080,
+                "rss_after_bytes": 203677696,
+                "rss_peak_delta_bytes": 24576,
+                "rss_after_delta_bytes": 8192,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.020553599926643074,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203685888,
+                "rss_peak_bytes": 203706368,
+                "rss_after_bytes": 203702272,
+                "rss_peak_delta_bytes": 20480,
+                "rss_after_delta_bytes": 16384,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.09375,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 203694080,
+              "rss_peak_delta_median_bytes": 24576,
+              "rss_peak_delta_p25_bytes": 22528,
+              "rss_peak_delta_p75_bytes": 67584,
+              "rss_after_delta_median_bytes": 16384
+            }
+          },
+          "100": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 100,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.013676000060513616,
+                "cpu_time_s_total": 0.0625,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203743232,
+                "rss_peak_bytes": 203763712,
+                "rss_after_bytes": 203747328,
+                "rss_peak_delta_bytes": 20480,
+                "rss_after_delta_bytes": 4096,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.027558599947951734,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203763712,
+                "rss_peak_bytes": 203796480,
+                "rss_after_bytes": 203788288,
+                "rss_peak_delta_bytes": 32768,
+                "rss_after_delta_bytes": 24576,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.012478999909944832,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203788288,
+                "rss_peak_bytes": 203788288,
+                "rss_after_bytes": 202522624,
+                "rss_peak_delta_bytes": 0,
+                "rss_after_delta_bytes": -1265664,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 203788288,
+              "rss_peak_delta_median_bytes": 20480,
+              "rss_peak_delta_p25_bytes": 10240,
+              "rss_peak_delta_p75_bytes": 26624,
+              "rss_after_delta_median_bytes": 4096
+            }
+          }
+        },
+        "n_jobs": 1
+      },
+      "inference_single": {
+        "p50_us": 77.2500061430037,
+        "p95_us": 119.25997678190446,
+        "p99_us": 308.40302002616227,
+        "n_samples": 400,
+        "resource": {
+          "workload": "inference_single",
+          "configuration": {
+            "n_jobs": 1,
+            "operations_per_measurement": 400,
+            "n_samples": 400
+          },
+          "repeats": [
+            {
+              "wall_time_s": 0.05266950000077486,
+              "cpu_time_s_total": 0.109375,
+              "cpu_utilization_avg_pct": 207.66287889270052,
+              "rss_before_bytes": 202686464,
+              "rss_peak_bytes": 202739712,
+              "rss_after_bytes": 202715136,
+              "rss_peak_delta_bytes": 53248,
+              "rss_after_delta_bytes": 28672,
+              "sample_count": 1,
+              "unavailable_reason": null
+            },
+            {
+              "wall_time_s": 0.04727920005097985,
+              "cpu_time_s_total": 0.109375,
+              "cpu_utilization_avg_pct": null,
+              "rss_before_bytes": 202715136,
+              "rss_peak_bytes": 202747904,
+              "rss_after_bytes": 202731520,
+              "rss_peak_delta_bytes": 32768,
+              "rss_after_delta_bytes": 16384,
+              "sample_count": 1,
+              "unavailable_reason": "duration_below_sampling_resolution"
+            },
+            {
+              "wall_time_s": 0.045740999979898334,
+              "cpu_time_s_total": 0.109375,
+              "cpu_utilization_avg_pct": null,
+              "rss_before_bytes": 202731520,
+              "rss_peak_bytes": 202838016,
+              "rss_after_bytes": 202838016,
+              "rss_peak_delta_bytes": 106496,
+              "rss_after_delta_bytes": 106496,
+              "sample_count": 1,
+              "unavailable_reason": "duration_below_sampling_resolution"
+            }
+          ],
+          "summary": {
+            "n_repeats": 3,
+            "cpu_time_median_s": 0.109375,
+            "cpu_utilization_median_pct": 207.66287889270052,
+            "cpu_utilization_p25_pct": 207.66287889270052,
+            "cpu_utilization_p75_pct": 207.66287889270052,
+            "rss_peak_median_bytes": 202747904,
+            "rss_peak_delta_median_bytes": 53248,
+            "rss_peak_delta_p25_bytes": 43008,
+            "rss_peak_delta_p75_bytes": 79872,
+            "rss_after_delta_median_bytes": 28672
+          }
+        },
+        "n_jobs": 1
+      },
+      "training_scaling": [
+        {
+          "fraction": 0.1,
+          "n_rows": 120,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0013,
+            0.0012,
+            0.0012
+          ],
+          "cpu_time_s": [
+            0.0156,
+            0.0,
+            0.0
+          ],
+          "wall_time_median_s": 0.0012299999361857772,
+          "cpu_time_median_s": 0.0
+        },
+        {
+          "fraction": 0.3,
+          "n_rows": 360,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0015,
+            0.0014,
+            0.0014
+          ],
+          "cpu_time_s": [
+            0.0,
+            0.0156,
+            0.0
+          ],
+          "wall_time_median_s": 0.0014341999776661396,
+          "cpu_time_median_s": 0.0
+        },
+        {
+          "fraction": 1.0,
+          "n_rows": 1200,
+          "n_repeats": 1,
+          "wall_time_s": [
+            0.0018
+          ],
+          "cpu_time_s": [
+            0.0
+          ],
+          "wall_time_median_s": 0.0017624999163672328,
+          "cpu_time_median_s": 0.0
+        }
+      ]
+    },
+    "rf": {
+      "static": {
+        "n_estimators": 50,
+        "mean_depth": 1.72,
+        "total_nodes": 242,
+        "model_size_bytes": 40233,
+        "model_size_kb": 39.3
+      },
+      "training_cost": {
+        "tuning_time_s": 3.219478699960746,
+        "tuning_cpu_s": 3.1875,
+        "fit_time_s": 0.12536119995638728,
+        "fit_cpu_s": 0.171875,
+        "total_training_cost_s": 3.344839899917133,
+        "n_rows_tuning": 236,
+        "n_rows_fit": 1200,
+        "n_candidates": 8,
+        "n_fits_tuning": 32,
+        "n_jobs_tuning": -1,
+        "n_jobs_fit": -1
+      },
+      "inference_batch": {
+        "1": {
+          "median_us_per_pkt": 1926.8000032752752,
+          "q25_us_per_pkt": 1814.3000779673457,
+          "q75_us_per_pkt": 2061.0999781638384
+        },
+        "10": {
+          "median_us_per_pkt": 232.73000260815024,
+          "q25_us_per_pkt": 208.2600025460124,
+          "q75_us_per_pkt": 276.0200062766671
+        },
+        "100": {
+          "median_us_per_pkt": 21.698999917134643,
+          "q25_us_per_pkt": 19.138999050483108,
+          "q75_us_per_pkt": 28.761998983100057
+        },
+        "resource": {
+          "1": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 1,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.014824000070802867,
+                "cpu_time_s_total": 0.0625,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203173888,
+                "rss_peak_bytes": 203251712,
+                "rss_after_bytes": 203235328,
+                "rss_peak_delta_bytes": 77824,
+                "rss_after_delta_bytes": 61440,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.013208899996243417,
+                "cpu_time_s_total": 0.0625,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203243520,
+                "rss_peak_bytes": 203243520,
+                "rss_after_bytes": 202588160,
+                "rss_peak_delta_bytes": 0,
+                "rss_after_delta_bytes": -655360,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.014616500004194677,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 202678272,
+                "rss_peak_bytes": 202743808,
+                "rss_after_bytes": 202743808,
+                "rss_peak_delta_bytes": 65536,
+                "rss_after_delta_bytes": 65536,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.0625,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 203243520,
+              "rss_peak_delta_median_bytes": 65536,
+              "rss_peak_delta_p25_bytes": 32768,
+              "rss_peak_delta_p75_bytes": 71680,
+              "rss_after_delta_median_bytes": 61440
+            }
+          },
+          "10": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 10,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.015422399970702827,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 202838016,
+                "rss_peak_bytes": 202895360,
+                "rss_after_bytes": 202895360,
+                "rss_peak_delta_bytes": 57344,
+                "rss_after_delta_bytes": 57344,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.016060799942351878,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 202944512,
+                "rss_peak_bytes": 202989568,
+                "rss_after_bytes": 202989568,
+                "rss_peak_delta_bytes": 45056,
+                "rss_after_delta_bytes": 45056,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.01522940001450479,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203030528,
+                "rss_peak_bytes": 203055104,
+                "rss_after_bytes": 203051008,
+                "rss_peak_delta_bytes": 24576,
+                "rss_after_delta_bytes": 20480,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 202989568,
+              "rss_peak_delta_median_bytes": 45056,
+              "rss_peak_delta_p25_bytes": 34816,
+              "rss_peak_delta_p75_bytes": 51200,
+              "rss_after_delta_median_bytes": 45056
+            }
+          },
+          "100": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": 1,
+              "batch_size": 100,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.015416400041431189,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203206656,
+                "rss_peak_bytes": 203235328,
+                "rss_after_bytes": 203210752,
+                "rss_peak_delta_bytes": 28672,
+                "rss_after_delta_bytes": 4096,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.015386000042781234,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203210752,
+                "rss_peak_bytes": 203235328,
+                "rss_after_bytes": 203214848,
+                "rss_peak_delta_bytes": 24576,
+                "rss_after_delta_bytes": 4096,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.0138770000776276,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 203227136,
+                "rss_peak_bytes": 203264000,
+                "rss_after_bytes": 203243520,
+                "rss_peak_delta_bytes": 36864,
+                "rss_after_delta_bytes": 16384,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 203235328,
+              "rss_peak_delta_median_bytes": 28672,
+              "rss_peak_delta_p25_bytes": 26624,
+              "rss_peak_delta_p75_bytes": 32768,
+              "rss_after_delta_median_bytes": 4096
+            }
+          }
+        },
+        "n_jobs": 1
+      },
+      "inference_single": {
+        "p50_us": 1810.2999893017113,
+        "p95_us": 2936.614997452123,
+        "p99_us": 4454.864036524667,
+        "n_samples": 400,
+        "resource": {
+          "workload": "inference_single",
+          "configuration": {
+            "n_jobs": 1,
+            "operations_per_measurement": 400,
+            "n_samples": 400
+          },
+          "repeats": [
+            {
+              "wall_time_s": 0.9471558999503031,
+              "cpu_time_s_total": 1.0625,
+              "cpu_utilization_avg_pct": 112.1779424121994,
+              "rss_before_bytes": 204201984,
+              "rss_peak_bytes": 204439552,
+              "rss_after_bytes": 204439552,
+              "rss_peak_delta_bytes": 237568,
+              "rss_after_delta_bytes": 237568,
+              "sample_count": 12,
+              "unavailable_reason": null
+            },
+            {
+              "wall_time_s": 0.9966383000137284,
+              "cpu_time_s_total": 1.078125,
+              "cpu_utilization_avg_pct": 108.17615578140526,
+              "rss_before_bytes": 204460032,
+              "rss_peak_bytes": 204578816,
+              "rss_after_bytes": 204500992,
+              "rss_peak_delta_bytes": 118784,
+              "rss_after_delta_bytes": 40960,
+              "sample_count": 13,
+              "unavailable_reason": null
+            },
+            {
+              "wall_time_s": 0.9963534999405965,
+              "cpu_time_s_total": 1.078125,
+              "cpu_utilization_avg_pct": 108.20707711312087,
+              "rss_before_bytes": 204587008,
+              "rss_peak_bytes": 204673024,
+              "rss_after_bytes": 204476416,
+              "rss_peak_delta_bytes": 86016,
+              "rss_after_delta_bytes": -110592,
+              "sample_count": 12,
+              "unavailable_reason": null
+            }
+          ],
+          "summary": {
+            "n_repeats": 3,
+            "cpu_time_median_s": 1.078125,
+            "cpu_utilization_median_pct": 108.20707711312087,
+            "cpu_utilization_p25_pct": 108.19161644726307,
+            "cpu_utilization_p75_pct": 110.19250976266014,
+            "rss_peak_median_bytes": 204578816,
+            "rss_peak_delta_median_bytes": 118784,
+            "rss_peak_delta_p25_bytes": 102400,
+            "rss_peak_delta_p75_bytes": 178176,
+            "rss_after_delta_median_bytes": 40960
+          }
+        },
+        "n_jobs": 1
+      },
+      "training_scaling_1job": [
+        {
+          "fraction": 0.1,
+          "n_rows": 120,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0491,
+            0.043,
+            0.0472
+          ],
+          "cpu_time_s": [
+            0.0469,
+            0.0312,
+            0.0312
+          ],
+          "wall_time_median_s": 0.047154199914075434,
+          "cpu_time_median_s": 0.03125
+        },
+        {
+          "fraction": 0.3,
+          "n_rows": 360,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0513,
+            0.0475,
+            0.049
+          ],
+          "cpu_time_s": [
+            0.0469,
+            0.0469,
+            0.0469
+          ],
+          "wall_time_median_s": 0.04895359999500215,
+          "cpu_time_median_s": 0.046875
+        },
+        {
+          "fraction": 1.0,
+          "n_rows": 1200,
+          "n_repeats": 1,
+          "wall_time_s": [
+            0.0584
+          ],
+          "cpu_time_s": [
+            0.0625
+          ],
+          "wall_time_median_s": 0.058383600087836385,
+          "cpu_time_median_s": 0.0625
+        }
+      ],
+      "training_scaling_all_cores": [
+        {
+          "fraction": 0.1,
+          "n_rows": 120,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0906,
+            0.083,
+            0.0878
+          ],
+          "cpu_time_s": [
+            0.1094,
+            0.1406,
+            0.0938
+          ],
+          "wall_time_median_s": 0.0878171999938786,
+          "cpu_time_median_s": 0.109375
+        },
+        {
+          "fraction": 0.3,
+          "n_rows": 360,
+          "n_repeats": 3,
+          "wall_time_s": [
+            0.0923,
+            0.0881,
+            0.085
+          ],
+          "cpu_time_s": [
+            0.0938,
+            0.0938,
+            0.0938
+          ],
+          "wall_time_median_s": 0.0881410000147298,
+          "cpu_time_median_s": 0.09375
+        },
+        {
+          "fraction": 1.0,
+          "n_rows": 1200,
+          "n_repeats": 1,
+          "wall_time_s": [
+            0.1252
+          ],
+          "cpu_time_s": [
+            0.125
+          ],
+          "wall_time_median_s": 0.1252478000242263,
+          "cpu_time_median_s": 0.125
+        }
+      ],
+      "inference_batch_all_cores": {
+        "1": {
+          "median_us_per_pkt": 19696.50003593415,
+          "q25_us_per_pkt": 17960.499972105026,
+          "q75_us_per_pkt": 23360.59999652207
+        },
+        "10": {
+          "median_us_per_pkt": 1874.67000214383,
+          "q25_us_per_pkt": 1871.7900034971535,
+          "q75_us_per_pkt": 1925.1200021244586
+        },
+        "100": {
+          "median_us_per_pkt": 180.32699939794838,
+          "q25_us_per_pkt": 175.65199988894165,
+          "q75_us_per_pkt": 273.18199980072677
+        },
+        "resource": {
+          "1": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": -1,
+              "batch_size": 1,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.028789700008928776,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 205467648,
+                "rss_peak_bytes": 205590528,
+                "rss_after_bytes": 205590528,
+                "rss_peak_delta_bytes": 122880,
+                "rss_after_delta_bytes": 122880,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.03521159989759326,
+                "cpu_time_s_total": 0.0625,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 205565952,
+                "rss_peak_bytes": 205656064,
+                "rss_after_bytes": 205656064,
+                "rss_peak_delta_bytes": 90112,
+                "rss_after_delta_bytes": 90112,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.02879040001425892,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 205623296,
+                "rss_peak_bytes": 205631488,
+                "rss_after_bytes": 205631488,
+                "rss_peak_delta_bytes": 8192,
+                "rss_after_delta_bytes": 8192,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 205631488,
+              "rss_peak_delta_median_bytes": 90112,
+              "rss_peak_delta_p25_bytes": 49152,
+              "rss_peak_delta_p75_bytes": 106496,
+              "rss_after_delta_median_bytes": 90112
+            }
+          },
+          "10": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": -1,
+              "batch_size": 10,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.03452139999717474,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 205602816,
+                "rss_peak_bytes": 205602816,
+                "rss_after_bytes": 205557760,
+                "rss_peak_delta_bytes": 0,
+                "rss_after_delta_bytes": -45056,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.03515870007686317,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 205565952,
+                "rss_peak_bytes": 205565952,
+                "rss_after_bytes": 204046336,
+                "rss_peak_delta_bytes": 0,
+                "rss_after_delta_bytes": -1519616,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.029105100082233548,
+                "cpu_time_s_total": 0.0625,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 204050432,
+                "rss_peak_bytes": 204345344,
+                "rss_after_bytes": 204345344,
+                "rss_peak_delta_bytes": 294912,
+                "rss_after_delta_bytes": 294912,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.078125,
+              "cpu_utilization_median_pct": null,
+              "cpu_utilization_p25_pct": null,
+              "cpu_utilization_p75_pct": null,
+              "rss_peak_median_bytes": 205565952,
+              "rss_peak_delta_median_bytes": 0,
+              "rss_peak_delta_p25_bytes": 0,
+              "rss_peak_delta_p75_bytes": 147456,
+              "rss_after_delta_median_bytes": -45056
+            }
+          },
+          "100": {
+            "workload": "inference_batch",
+            "configuration": {
+              "n_jobs": -1,
+              "batch_size": 100,
+              "operations_per_measurement": 1
+            },
+            "repeats": [
+              {
+                "wall_time_s": 0.030680400086566806,
+                "cpu_time_s_total": 0.078125,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 204570624,
+                "rss_peak_bytes": 204750848,
+                "rss_after_bytes": 204750848,
+                "rss_peak_delta_bytes": 180224,
+                "rss_after_delta_bytes": 180224,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.03190460009500384,
+                "cpu_time_s_total": 0.109375,
+                "cpu_utilization_avg_pct": null,
+                "rss_before_bytes": 204738560,
+                "rss_peak_bytes": 204742656,
+                "rss_after_bytes": 204742656,
+                "rss_peak_delta_bytes": 4096,
+                "rss_after_delta_bytes": 4096,
+                "sample_count": 1,
+                "unavailable_reason": "duration_below_sampling_resolution"
+              },
+              {
+                "wall_time_s": 0.08619299996644258,
+                "cpu_time_s_total": 0.09375,
+                "cpu_utilization_avg_pct": 108.76753336871855,
+                "rss_before_bytes": 204759040,
+                "rss_peak_bytes": 204783616,
+                "rss_after_bytes": 204783616,
+                "rss_peak_delta_bytes": 24576,
+                "rss_after_delta_bytes": 24576,
+                "sample_count": 1,
+                "unavailable_reason": null
+              }
+            ],
+            "summary": {
+              "n_repeats": 3,
+              "cpu_time_median_s": 0.09375,
+              "cpu_utilization_median_pct": 108.76753336871855,
+              "cpu_utilization_p25_pct": 108.76753336871855,
+              "cpu_utilization_p75_pct": 108.76753336871855,
+              "rss_peak_median_bytes": 204750848,
+              "rss_peak_delta_median_bytes": 24576,
+              "rss_peak_delta_p25_bytes": 14336,
+              "rss_peak_delta_p75_bytes": 102400,
+              "rss_after_delta_median_bytes": 24576
+            }
+          }
+        },
+        "n_jobs": -1
+      },
+      "inference_single_all_cores": {
+        "p50_us": 22628.850012551993,
+        "p95_us": 45594.14504328739,
+        "p99_us": 63451.88102219252,
+        "n_samples": 400,
+        "resource": {
+          "workload": "inference_single",
+          "configuration": {
+            "n_jobs": -1,
+            "operations_per_measurement": 400,
+            "n_samples": 400
+          },
+          "repeats": [
+            {
+              "wall_time_s": 10.483151199994609,
+              "cpu_time_s_total": 10.4375,
+              "cpu_utilization_avg_pct": 99.5645278874292,
+              "rss_before_bytes": 205733888,
+              "rss_peak_bytes": 206921728,
+              "rss_after_bytes": 206508032,
+              "rss_peak_delta_bytes": 1187840,
+              "rss_after_delta_bytes": 774144,
+              "sample_count": 155,
+              "unavailable_reason": null
+            },
+            {
+              "wall_time_s": 10.389017199981026,
+              "cpu_time_s_total": 10.578125,
+              "cpu_utilization_avg_pct": 101.82026650239176,
+              "rss_before_bytes": 206516224,
+              "rss_peak_bytes": 207007744,
+              "rss_after_bytes": 206561280,
+              "rss_peak_delta_bytes": 491520,
+              "rss_after_delta_bytes": 45056,
+              "sample_count": 152,
+              "unavailable_reason": null
+            },
+            {
+              "wall_time_s": 10.381506399950013,
+              "cpu_time_s_total": 10.59375,
+              "cpu_utilization_avg_pct": 102.04443933156955,
+              "rss_before_bytes": 206565376,
+              "rss_peak_bytes": 206905344,
+              "rss_after_bytes": 206098432,
+              "rss_peak_delta_bytes": 339968,
+              "rss_after_delta_bytes": -466944,
+              "sample_count": 152,
+              "unavailable_reason": null
+            }
+          ],
+          "summary": {
+            "n_repeats": 3,
+            "cpu_time_median_s": 10.578125,
+            "cpu_utilization_median_pct": 101.82026650239176,
+            "cpu_utilization_p25_pct": 100.69239719491048,
+            "cpu_utilization_p75_pct": 101.93235291698065,
+            "rss_peak_median_bytes": 206921728,
+            "rss_peak_delta_median_bytes": 491520,
+            "rss_peak_delta_p25_bytes": 415744,
+            "rss_peak_delta_p75_bytes": 839680,
+            "rss_after_delta_median_bytes": 45056
+          }
+        },
+        "n_jobs": -1
+      }
+    }
+  }
+}

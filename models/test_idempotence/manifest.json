@@ -1,0 +1,128 @@
+{
+  "features": {
+    "kept_cols": [
+      "ip_len",
+      "ip_ttl",
+      "udp_length",
+      "src_port_class",
+      "payload_entropy",
+      "pck_size"
+    ],
+    "pruned_zero_var": [
+      "ip_hdr_len",
+      "ip_flag_mf",
+      "has_mdns",
+      "has_ssdp",
+      "has_dhcp",
+      "eapol_type",
+      "eapol_version"
+    ],
+    "pruned_low_imp": [
+      "ip_proto",
+      "ip_flag_df",
+      "tcp_window_size",
+      "tcp_flag_syn",
+      "tcp_flag_ack",
+      "tcp_flag_fin",
+      "tcp_flag_psh",
+      "tcp_flag_rst",
+      "tcp_flag_urg",
+      "tcp_dataofs",
+      "tcp_options_len",
+      "icmp_type",
+      "icmp_code",
+      "proto_type",
+      "dst_port_class",
+      "has_dns",
+      "has_ntp",
+      "has_http",
+      "has_https"
+    ],
+    "nan_fill": -1,
+    "train_days": [
+      "16-09-23",
+      "16-09-24",
+      "16-09-25",
+      "16-09-26",
+      "16-09-27",
+      "16-09-28",
+      "16-09-29",
+      "16-09-30",
+      "16-10-01",
+      "16-10-02",
+      "16-10-03",
+      "16-10-04",
+      "16-10-05",
+      "16-10-06",
+      "16-10-07",
+      "16-10-08"
+    ],
+    "test_days": [
+      "16-10-09",
+      "16-10-10",
+      "16-10-11",
+      "16-10-12"
+    ],
+    "n_train_rows": 1200,
+    "n_test_rows": 600,
+    "train_label_counts": {
+      "IoT": 718,
+      "non-IoT": 482
+    },
+    "test_label_counts": {
+      "IoT": 364,
+      "non-IoT": 236
+    },
+    "sample_frac": 1.0,
+    "_meta": {
+      "timestamp": "2026-10-23T20:45:30.561657",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.3"
+    }
+  },
+  "dt": {
+    "ccp_alpha": 0.0,
+    "cv_f1": 0.9933285892190001,
+    "depth": 1,
+    "leaves": "2",
+    "unpruned_depth": 1,
+    "unpruned_leaves": "2",
+    "unpruned_fit_data": "tuning_subsample",
+    "tuning_time_s": 0.0456527000060305,
+    "tuning_cpu_s": 0.046875,
+    "fit_time_s": 0.002322999993339181,
+    "fit_cpu_s": 0.0,
+    "total_training_cost_s": 0.04797569999936968,
+    "n_rows_tuning": 236,
+    "n_rows_fit": 1200,
+    "n_candidates": 2,
+    "n_fits_tuning": 9,
+    "n_jobs_tuning": 1,
+    "n_jobs_fit": 1,
+    "tune_frac": 0.2,
+    "fold_fingerprint": "bae5e67fb8dca8c39f9031cbd101c2d26bfa43b3",
+    "dedup_used": false,
+    "n_alphas_total": 2,
+    "n_alphas_cv": 2,
+    "cv_curve": [
+      {
+        "alpha": 0.0,
+        "mean_f1": 0.9933285892190001,
+        "std_f1": 0.006676153209735219
+      },
+      {
+        "alpha": 0.48100402183280666,
+        "mean_f1": 0.8520242413929132,
+        "std_f1": 0.13463317212803616
+      }
+    ],
+    "one_se_rule": true,
+    "_meta": {
+      "timestamp": "2026-10-23T20:45:30.751791",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.3"
+    }
+  }
+}

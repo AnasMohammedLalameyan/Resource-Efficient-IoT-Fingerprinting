@@ -1,0 +1,148 @@
+{
+  "accuracy": 0.9968785963142213,
+  "precision": 0.9959225280326198,
+  "recall": 0.9953049563715285,
+  "f1": 0.9956136464333185,
+  "confusion_matrix": [
+    [
+      40764,
+      92
+    ],
+    [
+      106,
+      22471
+    ]
+  ],
+  "specificity": 0.9977481887605247,
+  "balanced_accuracy": 0.9965265725660266,
+  "mcc": 0.9931910322944502,
+  "roc_auc": 0.9998284648895442,
+  "pr_auc": 0.9997028149494216,
+  "class_prevalence": {
+    "IoT": 22577,
+    "non-IoT": 40856,
+    "IoT_fraction": 0.35591884350416975
+  },
+  "per_day": {
+    "16-10-09": {
+      "n_rows": 5882,
+      "accuracy": 0.9909894593675621,
+      "f1": 0.9952239343966838,
+      "precision": 0.9958521190261497,
+      "recall": 0.9945965417867435
+    },
+    "16-10-10": {
+      "n_rows": 6088,
+      "accuracy": 0.9945795006570303,
+      "f1": 0.9971524721718872,
+      "precision": 0.9965505346671266,
+      "recall": 0.9977551372819893
+    },
+    "16-10-11": {
+      "n_rows": 17799,
+      "accuracy": 0.9955615484015956,
+      "f1": 0.9947803105384869,
+      "precision": 0.9956354979500066,
+      "recall": 0.9939265909691049
+    },
+    "16-10-12": {
+      "n_rows": 33664,
+      "accuracy": 0.9990197243346007,
+      "f1": 0.9954911873206722,
+      "precision": 0.9956272205520634,
+      "recall": 0.9953551912568306
+    }
+  },
+  "per_device": {
+    "00:16:6c:ab:6b:88": {
+      "true_label": "IoT",
+      "n_packets": 3224,
+      "correct_fraction": 0.997519
+    },
+    "00:24:e4:1b:6f:96": {
+      "true_label": "IoT",
+      "n_packets": 12,
+      "correct_fraction": 0.916667
+    },
+    "00:24:e4:20:28:c6": {
+      "true_label": "IoT",
+      "n_packets": 698,
+      "correct_fraction": 1.0
+    },
+    "00:62:6e:51:27:2e": {
+      "true_label": "IoT",
+      "n_packets": 1931,
+      "correct_fraction": 0.958571
+    },
+    "08:21:ef:3b:fc:e3": {
+      "true_label": "non-IoT",
+      "n_packets": 1069,
+      "correct_fraction": 0.935454
+    },
+    "18:b4:30:25:be:e4": {
+      "true_label": "IoT",
+      "n_packets": 5,
+      "correct_fraction": 1.0
+    },
+    "18:b7:9e:02:20:44": {
+      "true_label": "IoT",
+      "n_packets": 248,
+      "correct_fraction": 0.991935
+    },
+    "30:8c:fb:2f:e4:b2": {
+      "true_label": "IoT",
+      "n_packets": 7638,
+      "correct_fraction": 0.999738
+    },
+    "44:65:0d:56:cc:d3": {
+      "true_label": "IoT",
+      "n_packets": 2081,
+      "correct_fraction": 0.997597
+    },
+    "70:5a:0f:e4:9b:c0": {
+      "true_label": "IoT",
+      "n_packets": 216,
+      "correct_fraction": 0.99537
+    },
+    "70:ee:50:03:b8:ac": {
+      "true_label": "IoT",
+      "n_packets": 276,
+      "correct_fraction": 1.0
+    },
+    "70:ee:50:18:34:43": {
+      "true_label": "IoT",
+      "n_packets": 510,
+      "correct_fraction": 0.992157
+    },
+    "74:2f:68:81:69:42": {
+      "true_label": "non-IoT",
+      "n_packets": 39584,
+      "correct_fraction": 0.999823
+    },
+    "b4:ce:f6:a7:a3:c2": {
+      "true_label": "non-IoT",
+      "n_packets": 203,
+      "correct_fraction": 0.921182
+    },
+    "d0:52:a8:00:67:5e": {
+      "true_label": "IoT",
+      "n_packets": 849,
+      "correct_fraction": 1.0
+    },
+    "d0:73:d5:01:83:08": {
+      "true_label": "IoT",
+      "n_packets": 341,
+      "correct_fraction": 1.0
+    },
+    "ec:1a:59:79:f4:89": {
+      "true_label": "IoT",
+      "n_packets": 2039,
+      "correct_fraction": 0.999019
+    },
+    "ec:1a:59:83:28:11": {
+      "true_label": "IoT",
+      "n_packets": 2509,
+      "correct_fraction": 0.999601
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "features": {
+    "kept_cols": [
+      "corrupted_feature_1",
+      "corrupted_feature_2"
+    ],
+    "_meta": {
+      "timestamp": "2026-10-23T20:45:30.314801",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.3"
+    }
+  },
+  "dt": {
+    "ccp_alpha": 0.0,
+    "cv_f1": NaN,
+    "depth": 0,
+    "leaves": "1",
+    "unpruned_depth": 0,
+    "unpruned_leaves": "1",
+    "fit_time_s": 0.00023370003327727318,
+    "n_alphas_total": 1,
+    "n_alphas_cv": 1,
+    "cv_curve": [],
+    "one_se_rule": true,
+    "_meta": {
+      "timestamp": "2026-10-07T13:35:35.814954",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "sklearn_version": "1.9.1",
+      "numpy_version": "2.5.3"
+    }
+  }
+}

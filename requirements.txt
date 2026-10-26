@@ -1,0 +1,8 @@
+scapy
+pandas
+numpy
+scikit-learn
+joblib
+pyarrow
+fpdf2
+matplotlib
